@@ -1,15 +1,11 @@
-# Logs 
+# Logs
 
+## Day 01 : SEP 04, 2023
 
-## Day  ?? : MONTH DAY, YEAR
-
-- **Today`s Progress**: 
+- **Today`s Progress**:
 
 - **Link to Description**: []()
 
-- **References**: 
+- **References**:
   - []()
   - []()
-
-
-
