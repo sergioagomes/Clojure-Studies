@@ -118,3 +118,105 @@ So if we call this function and pass the 1000 as value, we get the following res
 900.0
 ```
 This is a pure function because with the same input, we'll always get the same output.
+
+Let's make some changes on the function.
+```clojure
+(defn apply-discount 
+    [total-value]
+    (* total-value (- 1 0.1)))
+```
+so here we change the multiplication to **-1 0.1**, in others words 1 less 10% of discount, that is 0.9. 
+
+### Symbols and Namespaces
+
+So let take the apply-discount function and make some improvements, so the fisrt thing is define a symbol to discount to make the function more clear.
+```clojure
+(defn apply-discount [total-value]
+    (def discount 0.10)
+    (* total-value (- 1 discount)))
+```
+If we pass the 1000 again, we'll get the same result.
+
+But these is a bad pratice, 'cause we define a global varible inside our function, we don't have a guarantee that this symbol did not already exist and we just redefine it, and also we can acess the symbol outside the function, these is bad security.
+
+So to avoid this, we need define a local symbol in the space of function, we'll use **let** that receive a vector, so we pass the discount inside the vector.
+```clojure
+(defn apply-discount [total-value]
+    (let  [discount 0.10])
+    (* total-value (- 1 discount)))
+```
+Now we can call a function again and all still works, but we can't acess the discount outside the function, 'cause the symbol is local.
+
+We can better these fuction passing the function (* total-value (- 1 discount)) to inside the let.
+```clojure
+(defn apply-discount [total-value]
+    (let  [discount 0.10]
+        (* total-value (- 1 discount))))
+``` 
+The let will execute the operations inside them and return the result of last instruction, as we just have one instruction, the let will return the discount.
+
+
+### Let multiples and conditionals
+
+So let do some changes in our apply-discount, where we'll improve them.
+```clojure
+(defn apply-discount [total-value]
+    (let  [discount-rate (/ 10 100)]
+        (let [discount (* total-value discount-rate)])
+        (println "Calc the discount" discount)
+        (* total-value (- 1 discount))))
+``` 
+As we can see, we could define other let inside a let, but we have a better way to do that, just remember let is a vector so it can receive more than two values, so let's change.
+```clojure
+(defn apply-discount [total-value]
+    (let  [discount-rate (/ 10 100)
+           discount (* total-value discount-rate)]
+        (println "Calc the discount" discount)
+        (- total-value discount)))
+``` 
+Like this, if the total-value is 100, the discount will be multiply of 0.1 to 100, that is 10, so we change -1 to total-value.
+
+So wait, let suppose we want these discount just work with the value is greater than 100, exclude the own 100. To do this we can use conditional, so let's beggining with tradional **If**, that is simple, let see the syntax.
+```clojure
+(if (> 50 100)
+    (println "Greater")
+    (println "Less"))
+```
+In clojure the **If** receive tree arguments: verification, what should execute if the return is true and what should be execute if the return is false, yeah is look like else but hidden.
+
+Let's back to our function and add the conditional
+```clojure
+(defn apply-discount 
+    [total-value]
+    (if (> total-value 100)
+    (let  [discount-rate (/ 10 100)
+           discount (* total-value discount-rate)]
+        (println "Calc the discount" discount)
+        (- total-value discount))))
+```
+If we execute the function
+```clojure
+(apply-discount 1000)
+
+;output we'll have
+900
+```
+But if we execute like these:
+```clojure
+(apply-discount 100)
+
+;output we'll have
+nil
+```
+So these happen because we not define a return in the case the condition was false, and for default the return is **nil**, and in clojure the nil is considered false, thus in case of false we'll return just the total-value.
+```clojure
+(defn apply-discount 
+    [total-value]
+    (if (> total-value 100)
+    (let  [discount-rate (/ 10 100)
+           discount (* total-value discount-rate)]
+        (println "Calc the discount" discount)
+        (- total-value discount))
+        total-value))
+```
+It's important define that **if** is not a function but a form, being more especif is a special form, in pratice special forms could be used in our code and are mixed with the functions that we invoke at different times.
