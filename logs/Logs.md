@@ -31,3 +31,13 @@
 - **References**:
   - []()
   - []()
+
+## Day 4: SEP 21, 2023
+
+- **Today`s Progress**: Today I kept my progress with closure, first a learned about leiningen, that is a tool to build projects in closure of easy way, besides that I learn more about function, like predicate, high-order-functions and anonymous functions, also started a simple project using the leiningen to pratice what I saw on formation.
+
+- **Link to Description**: []()
+
+- **References**:
+  - []()
+  - []()

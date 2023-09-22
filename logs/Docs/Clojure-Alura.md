@@ -220,3 +220,101 @@ So these happen because we not define a return in the case the condition was fal
         total-value))
 ```
 It's important define that **if** is not a function but a form, being more especif is a special form, in pratice special forms could be used in our code and are mixed with the functions that we invoke at different times.
+
+
+### Leiningen
+
+Leiningen is a build automation and project management tool for the Clojure programming language. It was created to simplify the process of configuring, building, and managing Clojure projects, making it easier to work with libraries, dependencies, and build tasks.
+
+So to create a simple project clojure using leinigen, we can do it like that:
+```bash
+lein new  name-of-project
+```
+So let create a stock project using the command above, and the project will have the following structure:
+```
+├── CHANGELOG.md
+├── doc
+│   └── intro.md
+├── resouces
+├── LICENSE
+├── project.clj
+├── README.md
+├── resources
+├── src
+│   └── core.clj
+└── test
+    └─ core_test.clj
+```
+Let's describe this:
+
+- CHANGELOG: That's a model for CHANGELOG in the project.
+- doc: Is a folder dedicated to the documentation of the project, it's initialized with an intro.md for writing the first steps.
+- LICENSE: Is a file containing the Eclipse Public License - v 2.0 the same license used in Clojure and default in most Open Source projects that use the language.
+- project.clj: That we're gonna declare our dependencies and configuration for the project.
+- README: That's an entry document and front page in the remote repository for the project.
+- resources: Where we can put the files we want to zip in the final jar when we compile the project.
+- src: That's where our code will really be.
+- test: That's where the tests will be placed.
+
+
+
+### Predicate
+
+A predicate is a function that returns a boolean value(true or false) with a
+base in one or more conditions, the predicate has the goal to test if one or more properties are attending to an argument.
+
+Follow the convention of clojure that predicates finished with **?**
+```clojure
+(defn even? [n]
+  (if (even? n)
+    true
+    false))
+```
+In this example the function **even?** Receive an argument **n** and verify if n is an
+even number, remember that even is a function that already exists on Clojure.
+
+We can use the predicate in many contexts, like, conditional tests, filters, and high order function, for example:
+```clojure
+(def numbers [1 2 3 4 5 6])
+
+(def even-numbers (filter even? numeros))
+```
+In these examples, the **filter** uses the predicate **even?** To create a new sequence
+**even-numbers** that contain just a sequence of evens.
+
+
+### Function as Parameters
+
+In Clojure like other functional languages we can pass functions as parameters to other functions, these allow us create a code more flexible and reusable, let's see a example.
+```clojure
+(defn apply-function [function list]
+  (map function list))
+```
+So here we have a function **apply-funtion** that receives two arguments, the "function" and "list", where the function is the function we want apply in wich element of the list, so let use then.
+```clojure
+(defn double[n]
+  (* n 2))
+
+(def numbers[1 2 3 4 5])
+
+(def double-numbers (apply-function double numbers)
+
+;; Result: (2 4 6 8 10)
+```
+In these example the fuction double, is a function that doubles the value of a number, the **numbers** is list with numbers that we want process. So we'll pass the
+**double** as argument to apply-function, that apply the **double** function to all elements of list, that will return the result in symbol **double-numbers**
+
+These is called **High Order Functions", in other words is a function that use as parameter to other function, or can return a new function as result.
+
+### Anonymous Functions and Lambdas
+
+Anonymous functions on clojure are function that no has a especific name, so we create then directly in the point that we wish use it, in clojure we can create anonymous function using the macro **fn** or **#()** also called **lambda**, let's see some examples.
+
+- **fn**
+```clojure
+(def number (fn [a b] (+ a b)))
+```
+- **Lambda** 
+```clojure
+(def square #( * % %))
+```
