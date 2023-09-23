@@ -285,12 +285,12 @@ In these examples, the **filter** uses the predicate **even?** To create a new s
 
 ### Function as Parameters
 
-In Clojure like other functional languages we can pass functions as parameters to other functions, these allow us create a code more flexible and reusable, let's see a example.
+In Clojure like other functional languages we can pass functions as parameters to other functions, these allow us to create a code more flexible and reusable, let's see an example.
 ```clojure
 (defn apply-function [function list]
   (map function list))
 ```
-So here we have a function **apply-funtion** that receives two arguments, the "function" and "list", where the function is the function we want apply in wich element of the list, so let use then.
+So here we have a function **apply-funtion** that receives two arguments, the "function" and "list", where the function is the function we want apply to which element of the list, so let use.
 ```clojure
 (defn double[n]
   (* n 2))
@@ -301,14 +301,14 @@ So here we have a function **apply-funtion** that receives two arguments, the "f
 
 ;; Result: (2 4 6 8 10)
 ```
-In these example the fuction double, is a function that doubles the value of a number, the **numbers** is list with numbers that we want process. So we'll pass the
-**double** as argument to apply-function, that apply the **double** function to all elements of list, that will return the result in symbol **double-numbers**
+In this example the function double, is a function that doubles the value of a number, the **numbers** is a list with numbers that we want process. So we'll pass the
+**double** as an argument to apply-function, that apply the **double** function to all elements of the list, that will return the result in symbol **double-numbers**
 
-These is called **High Order Functions", in other words is a function that use as parameter to other function, or can return a new function as result.
+These are called **High Order Functions", in other words is a function that uses as parameter to another function, or can return a new function as a result.
 
 ### Anonymous Functions and Lambdas
 
-Anonymous functions on clojure are function that no has a especific name, so we create then directly in the point that we wish use it, in clojure we can create anonymous function using the macro **fn** or **#()** also called **lambda**, let's see some examples.
+Anonymous functions on clojure are functions that noun has a specific name, so we create then directly at the point that we wish to use it, in clojure we can create an anonymous function using the macro **fn** or **#()** also called **lambda**, let's see some examples.
 
 - **fn**
 ```clojure

@@ -34,7 +34,20 @@
 
 ## Day 4: SEP 21, 2023
 
-- **Today`s Progress**: Today I kept my progress with closure, first a learned about leiningen, that is a tool to build projects in closure of easy way, besides that I learn more about function, like predicate, high-order-functions and anonymous functions, also started a simple project using the leiningen to pratice what I saw on formation.
+- **Today`s Progress**: Today I kept my progress with clojure, first a learned about leiningen, that is a tool to build projects in closure of easy way, besides that I learn more about function, like predicate, high-order-functions and anonymous functions, also started a simple project using the leiningen to pratice what I saw on formation.
+
+- **Link to Description**: []()
+
+- **References**:
+  - []()
+  - []()
+
+
+
+## Day 5: SEP 22, 2023
+
+- **Today`s Progress**: Today I kept my progress with clojure, learned more about vectors and how use get to get the value of vector and update is a function that applies a function a vector in the indice passing as parameter, and returns that vector with the values update, I also started programming clojure book. to go deep
+in the language.
 
 - **Link to Description**: []()
 
