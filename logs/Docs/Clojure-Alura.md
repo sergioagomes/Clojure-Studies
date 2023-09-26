@@ -318,3 +318,27 @@ Anonymous functions on clojure are functions that noun has a specific name, so w
 ```clojure
 (def square #( * % %))
 ```
+
+### Map and Filter
+
+- **Map**:
+```clojure
+(println "map"(map apply-discount prices)
+```
+Here we map pass for all prices and apply the function apply-discount, is realizing a math function **(f(x))**. So
+the map is used when we want to do a loop passing all the elements and applying a function.
+
+- **Filter**
+```clojure
+(println (range 10))
+(println (filter even? (range 10)))
+
+;;output
+(0 1 2 3 4 5 6 7 8 9)
+(0 2 4 6 8)
+```
+The filter is equal map, and it receives two parameters. The first parameter receive the function **even?** And second receive every element set **(range 10)**, if the function returns true, they are held, if not, they are discarded.
+
+### Reduce
+
+Reduce is the part of Trinity (map, filter, reduce), is like the others, receive as first parameter the function we want apply and the second the sequence of values we want to reduce.
