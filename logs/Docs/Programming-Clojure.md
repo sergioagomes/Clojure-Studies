@@ -66,3 +66,60 @@ So we can instantiate the record:
 (:age Felipeg)
 -> 25
 ```
+
+
+### Reader Macros
+
+The reader that is a part of Clojure system that transforms the code wrote on text to strucutures of data that Clojure can understand and manipulate, and reader macros has special comportments of reader add for character of macro prefix.
+
+The comment is a reader macro, this macro is **;** and the speciak reader behavior is "ignore everything else up to the end of this line."
+
+For definition Reader macros are abrreviations of longer list forms and are use to reduce clutter. You have saw one, that is **'** these character prevents evaluation, for example:
+```clojure
+'(1 2)
+-> (1 2)
+
+;'(1 2) is equivalent to the longer (quote(1 2)):
+
+(quote (1 2))
+-> (1 2)
+```
+
+So in clojure we have other reader macros to help us, with simple syntax.
+
+### Functions 
+
+Functions in Clojure are simple list whose the first element resolves to a function, for example we have this function sum that do a sum of numbers:
+```clojure
+(+ 1 2)
+;So in this example the **+** is the function that called.
+```
+Function names are typically hyphenated, as in clear-agent-errors. If a function
+is a predicate, then by convention its name should end with a question mark, for example
+```clojure
+(number? 12)
+-> true
+
+(number? "S")
+-> false
+```
+
+If we want declare our own function we can do like this:
+```clojure
+(defn name-function [params*] body
+```
+
+so let's define our function:
+```clojure
+(defn say-hello [username]
+    (str "Hello, " username))
+```
+If we call
+```clojure
+(say-hello "Felipe")
+-> "Hello, Felipe"
+
+```
+
+
+

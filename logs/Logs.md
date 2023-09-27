@@ -49,7 +49,29 @@
 - **Today`s Progress**: Today I kept my progress with clojure, learned more about vectors and how use get to get the value of vector and update is a function that applies a function a vector in the indice passing as parameter, and returns that vector with the values update, I also started programming clojure book. to go deep
 in the language.
 
-- **Link to Description**: [Clojure-Alura](/logs/Docs/Clojure-Alura.md)
+- **Link to Description**: [Clojure-Alura](/logs/Docs/Clojure-Alura.md) and [Programming-Clojure](/logs/Docs/Programming-Clojure.md)
+
+- **References**:
+  - []()
+  - []()
+
+
+## Day 6: SEP 25, 2023
+
+- **Today`s Progress**: Today I learned about some important functions on clojure that are map, filter and reduce and how just tree function we can do a lot of things, also kept my read of book programing clojure, learn about forms and keywords to use theses things to improve our code.
+- **Link to Description**: [Clojure-Alura](/logs/Docs/Clojure-Alura.md) and [Programming-Clojure](/logs/Docs/Programming-Clojure.md)
+
+
+- **References**:
+  - []()
+  - []()
+
+## Day 7: SEP 26, 2023
+
+- **Today`s Progress**: Today I kept me reading  the book programing clojure, It is a great book to get the foundation of  clojure, Because I learn more about functions, reader macros, things that I haven't seen, also practice a little, testing do some functions with map, filter e reduce to memorize in my head.
+
+- **Link to Description**: [Clojure-Alura](/logs/Docs/Clojure-Alura.md) and [Programming-Clojure](/logs/Docs/Programming-Clojure.md)
+
 
 - **References**:
   - []()
