@@ -76,3 +76,14 @@ in the language.
 - **References**:
   - []()
   - []()
+
+## Day 8: SEP 27, 2023
+
+- **Today`s Progress**: Today I practice a little about how define maps/dictionaries and did some to fix in my mind.
+
+- **Link to Description**: [Clojure-Alura](/logs/Docs/Clojure-Alura.md) and [Programming-Clojure](/logs/Docs/Programming-Clojure.md)
+
+
+- **References**:
+  - []()
+  - []()
