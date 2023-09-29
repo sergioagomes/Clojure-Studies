@@ -342,3 +342,39 @@ The filter is equal map, and it receives two parameters. The first parameter rec
 ### Reduce
 
 Reduce is the part of Trinity (map, filter, reduce), is like the others, receive as first parameter the function we want apply and the second the sequence of values we want to reduce.
+
+
+### Threading
+
+In Clojure, "threading" refers to combining multiple functions and operations into an expression in a more readable and functional way, allowing for the composition of functions in a more declarative style. Threading is a technique that helps make code more concise and easier to understand.
+
+There are two main threading macros in Clojure: -> and ->>. Both are used to chain functions and operations in an expression.
+
+- **Threading-First**: This chain the function and operations of left to right, passing the result of operation as argument to next function.
+```clojure
+(-> x
+    (function1 arg1)
+    (function2 arg2))
+```
+the value of X is passed to **function1** and their result is passed to function2...
+
+
+- **Threading-Last**: is used when we want pass the argument after the operation, of example:
+```clojure
+defn factorial [n]
+ ( ->> (inc n)
+       (range)
+       (next)
+       (reduce *))) ;; reduce them by multiplying
+
+(factorial 5) ;; 120
+```
+In other word when we need:
+ ```clojure
+(name-of-function [argument] <function-input>) 
+```
+We'll use thread first,and if we need:
+```clojure
+(name-of-function <function-input> [argument])
+```
+We'll use thread last.

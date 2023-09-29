@@ -87,3 +87,17 @@ in the language.
 - **References**:
   - []()
   - []()
+
+
+## Day 9: SEP 28, 2023
+
+- **Today`s Progress**: Today I studie about thread(first and last) in clojure, in which case use each one, and learned about destructuring, and how these helps when we want extract the value to individual variables in one step.This technique is particularly useful when you want to conveniently access specific parts of a complex data structure.
+
+Destructuring is often used in function parameters, where you can destructure the arguments passed to the function to access the values ​​directly. Additionally, it is commonly used in maps to extract values ​​associated with specific keys.
+
+- **Link to Description**: [Clojure-Alura](/logs/Docs/Clojure-Alura.md) and [Programming-Clojure](/logs/Docs/Programming-Clojure.md)
+
+
+- **References**:
+  - []()
+  - []()

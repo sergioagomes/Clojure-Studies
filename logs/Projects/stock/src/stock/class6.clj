@@ -2,8 +2,8 @@
 
 
 ;this is map/dictionarie definition with hashmap
-(def stock {"book1" 10 "book2" 5})
-(println stock)
+;(def stock {"book1" 10 "book2" 5})
+;(println stock)
 
 ;other form to declare this dictionarie is using the keyword : 
 (def  stock {:book1 10
@@ -20,3 +20,9 @@
             :tshirt {:amount 3, :price 40}})
 
 ;output {:bag{:amount 2, :price 80}, :tshirt {:amount 3, :price 40}}
+
+
+;-> threading 
+(println (-> order
+             :bag
+             :amount))
