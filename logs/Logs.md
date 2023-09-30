@@ -101,3 +101,10 @@ Destructuring is often used in function parameters, where you can destructure th
 - **References**:
   - []()
   - []()
+
+
+## Day 10: SEP 29, 2023
+
+- **Today`s Progress**: Today I just studied kept my read of programming clojure, fixing somethings doing examples on practice.
+
+- **Link to Description**: [Programming-Clojure](/logs/Docs/Programming-Clojure.md)

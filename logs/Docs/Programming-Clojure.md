@@ -118,8 +118,14 @@ If we call
 ```clojure
 (say-hello "Felipe")
 -> "Hello, Felipe"
-
 ```
-
+But if we try call this functin without pass an argument we'll get an erro.
+```clojure
+(say-hello )
+-> rityException Wrong number of args (0) passed to: user$say-hello
+clojure.lang.AFn.throwArity (AFn.java:437)
+```
+Clojure functions enforce their arity, that is, their expected number of arguments. If you call a function with an incorrect number of arguments, Clojure
+will throw an ArityException.
 
 
