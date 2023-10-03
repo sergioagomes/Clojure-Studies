@@ -108,3 +108,10 @@ Destructuring is often used in function parameters, where you can destructure th
 - **Today`s Progress**: Today I just studied kept my read of programming clojure, fixing somethings doing examples on practice.
 
 - **Link to Description**: [Programming-Clojure](/logs/Docs/Programming-Clojure.md)
+
+
+## Day 11: OCT 02, 2023
+
+- **Today`s Progress**: Today I kept watching the Alura course, so I saw how create maps and use recursion with them, and put in practice what I saw on class in a new project **Store**, also still read the programming clojure book.
+
+- **Link to Description**: [Programming-Clojure](/logs/Docs/Programming-Clojure.md)
