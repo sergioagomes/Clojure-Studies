@@ -1,25 +1,25 @@
 (ns store.class1)
 
-;def a map
+;do a simple version of map function
+;
 (defn my-map
- [func sequence]
- (let [first (first sequence)]
- ((func first))))
-
+  [function sequence]
+  (let [primeiro (first sequence)]
+    (function primeiro)))
 
 (my-map println ["sergio" "Felipe" "Joel" "Helder"])
 
-
+;map that shows the rest, but stay in infinite loop
 (defn my-map
   [func sequence]
-  (let [first (first sequence)]
-    (func first)
-    (my-map func(rest sequence))))
+  (let [firsts (first sequence)]
+    (func firsts)
+    (my-map func (rest sequence))))
 
 (my-map println ["sergio" "Felipe" "Joel" "Helder"])
 
 
-;function with do
+;map with recursion but not stay in infinite loop
 (defn my-map
   [func sequence]
   (let [first (first sequence)]
@@ -36,7 +36,7 @@
 (defn my-map
   [func sequence]
   (let [first (first sequence)]
-    (if (not(nil? first))
+    (if (not (nil? first))
       (do
         (func first)
         (my-map func (rest sequence))))))

@@ -112,6 +112,13 @@ Destructuring is often used in function parameters, where you can destructure th
 
 ## Day 11: OCT 02, 2023
 
-- **Today`s Progress**: Today I kept watching the Alura course, so I saw how create maps and use recursion with them, and put in practice what I saw on class in a new project **Store**, also still read the programming clojure book.
+- **Today`s Progress**: Today I kept watching the Alura course, so I saw how create maps and use recursion with them, and put in practice what I saw in class in a new project **Store**, also still read the programming clojure book.
 
-- **Link to Description**: [Programming-Clojure](/logs/Docs/Programming-Clojure.md)
+- **Link to Description**: [Classes](/logs/Projects/store/src/store/classs2.clj)
+
+
+## Day 12: OCT 03, 2023
+
+- **Today`s Progress**: Today I learned about recursion and how to use in clojure to avoid  stack overflow, also about tail recursion, this means that recursion is call as the last operation of the function before returing a value, and saw how to do multiple variables of the same function per arity, and to finish saw about loops and how I can implement to.
+
+- **Link to Description**: [Classes](/logs/Projects/store/src/store/classs3.clj)
