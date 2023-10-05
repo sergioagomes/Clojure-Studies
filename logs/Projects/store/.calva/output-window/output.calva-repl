@@ -6403,3 +6403,267 @@ clj꞉store.class3꞉> 
 4
 nil
 clj꞉store.class3꞉> 
+; Syntax error compiling at (/mnt/c/Users/Sergio Gomes/Dev/Clojure-Studies/logs/Projects/store/src/store/db.clj:4:1).
+; Unable to resolve symbol: bag in this context
+clj꞉store.db꞉> 
+; Syntax error compiling at (/mnt/c/Users/Sergio Gomes/Dev/Clojure-Studies/logs/Projects/store/src/store/class4.clj:5:10).
+; No such var: store.db/all-orders
+clj꞉store.class4꞉> 
+#'store.db/all-orders
+clj꞉store.db꞉> 
+#'store.db/all-orders
+clj꞉store.db꞉> 
+; Syntax error compiling at (/mnt/c/Users/Sergio Gomes/Dev/Clojure-Studies/logs/Projects/store/src/store/db.clj:17:1).
+; Unable to resolve symbol: order2 in this context
+clj꞉store.db꞉> 
+; Syntax error compiling at (/mnt/c/Users/Sergio Gomes/Dev/Clojure-Studies/logs/Projects/store/src/store/db.clj:17:1).
+; Unable to resolve symbol: order2 in this context
+clj꞉store.db꞉> 
+; Syntax error compiling at (/mnt/c/Users/Sergio Gomes/Dev/Clojure-Studies/logs/Projects/store/src/store/db.clj:8:1).
+; Unable to resolve symbol: bag in this context
+clj꞉store.db꞉> 
+; Syntax error compiling at (/mnt/c/Users/Sergio Gomes/Dev/Clojure-Studies/logs/Projects/store/src/store/db.clj:17:1).
+; Unable to resolve symbol: order3 in this context
+clj꞉store.db꞉> 
+; Syntax error compiling at (/mnt/c/Users/Sergio Gomes/Dev/Clojure-Studies/logs/Projects/store/src/store/db.clj:17:1).
+; Unable to resolve symbol: order3 in this context
+clj꞉store.db꞉> 
+; Syntax error reading source at (REPL:15:48).
+; Map literal must contain an even number of forms
+clj꞉store.db꞉> 
+; Syntax error reading source at (REPL:11:48).
+; Map literal must contain an even number of forms
+clj꞉store.db꞉> 
+; Syntax error reading source at (REPL:7:48).
+; Map literal must contain an even number of forms
+clj꞉store.db꞉> 
+:amount
+clj꞉store.db꞉> 
+; Syntax error reading source at (REPL:7:47).
+; Map literal must contain an even number of forms
+clj꞉store.db꞉> 
+; Syntax error reading source at (REPL:7:47).
+; Map literal must contain an even number of forms
+clj꞉store.db꞉> 
+; Syntax error compiling at (/mnt/c/Users/Sergio Gomes/Dev/Clojure-Studies/logs/Projects/store/src/store/db.clj:8:1).
+; Unable to resolve symbol: mochila in this context
+clj꞉store.db꞉> 
+#'store.db/pedido1
+clj꞉store.db꞉> 
+#'store.db/pedido1
+clj꞉store.db꞉> 
+#'store.db/pedido1
+clj꞉store.db꞉> 
+; Syntax error reading source at (REPL:11:56).
+; Map literal must contain an even number of forms
+clj꞉store.db꞉> 
+; Syntax error reading source at (REPL:11:56).
+; Map literal must contain an even number of forms
+clj꞉store.db꞉> 
+#'store.db/order1
+clj꞉store.db꞉> 
+; Syntax error compiling at (/mnt/c/Users/Sergio Gomes/Dev/Clojure-Studies/logs/Projects/store/src/store/db.clj:20:1).
+; Unable to resolve symbol: order3 in this context
+clj꞉store.db꞉> 
+; Syntax error compiling at (/mnt/c/Users/Sergio Gomes/Dev/Clojure-Studies/logs/Projects/store/src/store/db.clj:20:1).
+; Unable to resolve symbol: order3 in this context
+clj꞉store.db꞉> 
+#'store.db/order3
+clj꞉store.db꞉> 
+#'store.db/order2
+clj꞉store.db꞉> 
+#'store.db/order1
+clj꞉store.db꞉> 
+#'store.db/all-orders
+clj꞉store.db꞉> 
+#'store.db/all-orders
+clj꞉store.db꞉> 
+[{:user 1, :items {:bag {:id :bag, :amount 2, :unit-price 80}, :shirt {:id :shirt, :amount 3, :unit-price 40}, :shoes {:id :shoes, :amount 1}}} {:user 12, :items {:bag {:id :bag, :amount 2, :unit-price 80}, :shirt {:id :shirt, :amount 3, :unit-price 40}, :shoes {:id :shoes, :amount 1}}} {:user 12, :items {:bag {:id :bag, :amount 2, :unit-price 80}, :shirt {:id :shirt, :amount 3, :unit-price 40}, :shoes {:id :shoes, :amount 1}}}]
+nil
+clj꞉store.class4꞉> 
+[{:user 1, :items {:bag {:id :bag, :amount 2, :unit-price 80}, :shirt {:id :shirt, :amount 3, :unit-price 40}, :shoes {:id :shoes, :amount 1}}} {:user 12, :items {:bag {:id :bag, :amount 2, :unit-price 80}, :shirt {:id :shirt, :amount 3, :unit-price 40}, :shoes {:id :shoes, :amount 1}}} {:user 12, :items {:bag {:id :bag, :amount 2, :unit-price 80}, :shirt {:id :shirt, :amount 3, :unit-price 40}, :shoes {:id :shoes, :amount 1}}}]
+nil
+clj꞉store.class4꞉> 
+; Syntax error (ClassNotFoundException) compiling at (/mnt/c/Users/Sergio Gomes/Dev/Clojure-Studies/logs/Projects/store/src/store/class4.clj:5:10).
+; l.db
+clj꞉store.class4꞉> 
+; Syntax error (ClassNotFoundException) compiling at (/mnt/c/Users/Sergio Gomes/Dev/Clojure-Studies/logs/Projects/store/src/store/class4.clj:5:10).
+; l.db
+clj꞉store.class4꞉> 
+; Syntax error (ClassNotFoundException) compiling at (/mnt/c/Users/Sergio Gomes/Dev/Clojure-Studies/logs/Projects/store/src/store/class4.clj:5:10).
+; s.db
+clj꞉store.class4꞉> 
+; Syntax error (ClassNotFoundException) compiling at (/mnt/c/Users/Sergio Gomes/Dev/Clojure-Studies/logs/Projects/store/src/store/class4.clj:5:10).
+; s.db
+clj꞉store.class4꞉> 
+[{:user 1, :items {:bag {:id :bag, :amount 2, :unit-price 80}, :shirt {:id :shirt, :amount 3, :unit-price 40}, :shoes {:id :shoes, :amount 1}}} {:user 12, :items {:bag {:id :bag, :amount 2, :unit-price 80}, :shirt {:id :shirt, :amount 3, :unit-price 40}, :shoes {:id :shoes, :amount 1}}} {:user 12, :items {:bag {:id :bag, :amount 2, :unit-price 80}, :shirt {:id :shirt, :amount 3, :unit-price 40}, :shoes {:id :shoes, :amount 1}}}]
+nil
+clj꞉store.class4꞉> 
+nil
+clj꞉store.class4꞉> 
+nil
+clj꞉store.class4꞉> 
+[{:user 1, :items {:bag {:id :bag, :amount 2, :unit-price 80}, :shirt {:id :shirt, :amount 3, :unit-price 40}, :shoes {:id :shoes, :amount 1}}} {:user 12, :items {:bag {:id :bag, :amount 2, :unit-price 80}, :shirt {:id :shirt, :amount 3, :unit-price 40}, :shoes {:id :shoes, :amount 1}}} {:user 12, :items {:bag {:id :bag, :amount 2, :unit-price 80}, :shirt {:id :shirt, :amount 3, :unit-price 40}, :shoes {:id :shoes, :amount 1}}}]
+nil
+clj꞉store.class4꞉> 
+; Execution error (ArityException) at store.class4/eval8117 (REPL:7).
+; Wrong number of args (3) passed to: clojure.core/group-by
+clj꞉store.class4꞉> 
+{1 [{:user 1, :items {:bag {:id :bag, :amount 2, :unit-price 80}, :shirt {:id :shirt, :amount 3, :unit-price 40}, :shoes {:id :shoes, :amount 1}}}], 12 [{:user 12, :items {:bag {:id :bag, :amount 2, :unit-price 80}, :shirt {:id :shirt, :amount 3, :unit-price 40}, :shoes {:id :shoes, :amount 1}}} {:user 12, :items {:bag {:id :bag, :amount 2, :unit-price 80}, :shirt {:id :shirt, :amount 3, :unit-price 40}, :shoes {:id :shoes, :amount 1}}}]}
+nil
+clj꞉store.class4꞉> 
+#'store.class4/group-by-function
+clj꞉store.class4꞉> 
+element {:user 1, :items {:bag {:id :bag, :amount 2, :unit-price 80}, :shirt {:id :shirt, :amount 3, :unit-price 40}, :shoes {:id :shoes, :amount 1}}}
+element {:user 12, :items {:bag {:id :bag, :amount 2, :unit-price 80}, :shirt {:id :shirt, :amount 3, :unit-price 40}, :shoes {:id :shoes, :amount 1}}}
+element {:user 12, :items {:bag {:id :bag, :amount 2, :unit-price 80}, :shirt {:id :shirt, :amount 3, :unit-price 40}, :shoes {:id :shoes, :amount 1}}}
+{1 [{:user 1, :items {:bag {:id :bag, :amount 2, :unit-price 80}, :shirt {:id :shirt, :amount 3, :unit-price 40}, :shoes {:id :shoes, :amount 1}}}], 12 [{:user 12, :items {:bag {:id :bag, :amount 2, :unit-price 80}, :shirt {:id :shirt, :amount 3, :unit-price 40}, :shoes {:id :shoes, :amount 1}}} {:user 12, :items {:bag {:id :bag, :amount 2, :unit-price 80}, :shirt {:id :shirt, :amount 3, :unit-price 40}, :shoes {:id :shoes, :amount 1}}}]}
+nil
+clj꞉store.class4꞉> 
+; Syntax error compiling at (/mnt/c/Users/Sergio Gomes/Dev/Clojure-Studies/logs/Projects/store/src/store/class4.clj:17:10).
+; Unable to resolve symbol: maps in this context
+clj꞉store.class4꞉> 
+; Syntax error compiling at (/mnt/c/Users/Sergio Gomes/Dev/Clojure-Studies/logs/Projects/store/src/store/class4.clj:17:10).
+; Unable to resolve symbol: maps in this context
+clj꞉store.class4꞉> 
+{1 [{:user 1, :items {:bag {:id :bag, :amount 2, :unit-price 80}, :shirt {:id :shirt, :amount 3, :unit-price 40}, :shoes {:id :shoes, :amount 1}}}], 12 [{:user 12, :items {:bag {:id :bag, :amount 2, :unit-price 80}, :shirt {:id :shirt, :amount 3, :unit-price 40}, :shoes {:id :shoes, :amount 1}}} {:user 12, :items {:bag {:id :bag, :amount 2, :unit-price 80}, :shirt {:id :shirt, :amount 3, :unit-price 40}, :shoes {:id :shoes, :amount 1}}}]}
+()
+nil
+clj꞉store.class4꞉> 
+(1 2)
+nil
+clj꞉store.class4꞉> 
+#'store.class4/orders-total-per-user
+clj꞉store.class4꞉> 
+; Execution error (IllegalArgumentException) at store.class4/eval8135 (REPL:25).
+; Don't know how to create ISeq from: store.db$all_orders
+clj꞉store.class4꞉> 
+([1 1] [12 2])
+nil
+clj꞉store.class4꞉> 
+; Syntax error compiling at (/mnt/c/Users/Sergio Gomes/Dev/Clojure-Studies/logs/Projects/store/src/store/class4.clj:22:17).
+; Unable to resolve symbol: orders in this context
+clj꞉store.class4꞉> 
+#'store.class4/orders-total-per-user
+clj꞉store.class4꞉> 
+({:user-id 1, :order-total 1} {:user-id 12, :order-total 2})
+nil
+clj꞉store.class4꞉> 
+; Syntax error compiling at (/mnt/c/Users/Sergio Gomes/Dev/Clojure-Studies/logs/Projects/store/src/store/class4.clj:41:17).
+; Unable to resolve symbol: total-orders in this context
+clj꞉store.class4꞉> 
+#'store.class4/total-orders
+clj꞉store.class4꞉> 
+#'store.class4/quantity-of-orders-per-user-and-value-total-per-user
+clj꞉store.class4꞉> 
+({:user-id [{:user 1, :items {:bag {:id :bag, :amount 2, :unit-price 80}, :shirt {:id :shirt, :amount 3, :unit-price 40}, :shoes {:id :shoes, :amount 1}}}], :total-orders 1, :total-price -1} {:user-id [{:user 12, :items {:bag {:id :bag, :amount 2, :unit-price 80}, :shirt {:id :shirt, :amount 3, :unit-price 40}, :shoes {:id :shoes, :amount 1}}} {:user 12, :items {:bag {:id :bag, :amount 2, :unit-price 80}, :shirt {:id :shirt, :amount 3, :unit-price 40}, :shoes {:id :shoes, :amount 1}}}], :total-orders 2, :total-price -1})
+nil
+clj꞉store.class4꞉> 
+({:user-id [{:user 1, :items {:bag {:id :bag, :amount 2, :unit-price 80}, :shirt {:id :shirt, :amount 3, :unit-price 40}, :shoes {:id :shoes, :amount 1}}}], :total-orders 1, :total-price -1} {:user-id [{:user 12, :items {:bag {:id :bag, :amount 2, :unit-price 80}, :shirt {:id :shirt, :amount 3, :unit-price 40}, :shoes {:id :shoes, :amount 1}}} {:user 12, :items {:bag {:id :bag, :amount 2, :unit-price 80}, :shirt {:id :shirt, :amount 3, :unit-price 40}, :shoes {:id :shoes, :amount 1}}}], :total-orders 2, :total-price -1})
+nil
+clj꞉store.class4꞉> 
+#'store.class4/item-total
+clj꞉store.class4꞉> 
+#'store.class4/total-orders
+clj꞉store.class4꞉> 
+#'store.class4/quantity-of-orders-per-user-and-value-total-per-user
+clj꞉store.class4꞉> 
+(; Execution error (UnsupportedOperationException) at store.class4/item-total (REPL:35).
+; nth not supported on this type: PersistentArrayMap
+clj꞉store.class4꞉> 
+(; Execution error (UnsupportedOperationException) at store.class4/item-total (REPL:35).
+; nth not supported on this type: PersistentArrayMap
+clj꞉store.class4꞉> 
+#'store.class4/item-total
+clj꞉store.class4꞉> 
+#'store.class4/total-orders
+clj꞉store.class4꞉> 
+; Syntax error compiling at (/mnt/c/Users/Sergio Gomes/Dev/Clojure-Studies/logs/Projects/store/src/store/class4.clj:48:8).
+; Unable to resolve symbol: total-ordersl in this context
+clj꞉store.class4꞉> 
+; Syntax error compiling at (/mnt/c/Users/Sergio Gomes/Dev/Clojure-Studies/logs/Projects/store/src/store/class4.clj:48:8).
+; Unable to resolve symbol: total-ordersl in this context
+clj꞉store.class4꞉> 
+#'store.class4/total-of-orders
+clj꞉store.class4꞉> 
+(; Execution error (UnsupportedOperationException) at store.class4/item-total (REPL:35).
+; nth not supported on this type: PersistentArrayMap
+clj꞉store.class4꞉> 
+(; Execution error (UnsupportedOperationException) at store.class4/item-total (REPL:35).
+; nth not supported on this type: PersistentArrayMap
+clj꞉store.class4꞉> 
+#'store.class4/item-total
+clj꞉store.class4꞉> 
+#'store.class4/total-orders
+clj꞉store.class4꞉> 
+(; Execution error (UnsupportedOperationException) at store.class4/item-total (REPL:35).
+; nth not supported on this type: PersistentArrayMap
+clj꞉store.class4꞉> 
+#'store.class4/quantity-of-orders-per-user-and-value-total-per-user
+clj꞉store.class4꞉> 
+({:user-id [{:user 1, :items {:bag {:id :bag, :amount 2, :unit-price 80}, :shirt {:id :shirt, :amount 3, :unit-price 40}, :shoes {:id :shoes, :amount 1}}}], :total-orders 1, :total-price 0} {:user-id [{:user 12, :items {:bag {:id :bag, :amount 2, :unit-price 80}, :shirt {:id :shirt, :amount 3, :unit-price 40}, :shoes {:id :shoes, :amount 1}}} {:user 12, :items {:bag {:id :bag, :amount 2, :unit-price 80}, :shirt {:id :shirt, :amount 3, :unit-price 40}, :shoes {:id :shoes, :amount 1}}}], :total-orders 2, :total-price 0})
+nil
+clj꞉store.class4꞉> 
+({:user-id [{:user 1, :items {:bag {:id :bag, :amount 2, :unit-price 80}, :shirt {:id :shirt, :amount 3, :unit-price 40}, :shoes {:id :shoes, :amount 1}}}], :total-orders 1, :total-price 0} {:user-id [{:user 12, :items {:bag {:id :bag, :amount 2, :unit-price 80}, :shirt {:id :shirt, :amount 3, :unit-price 40}, :shoes {:id :shoes, :amount 1}}} {:user 12, :items {:bag {:id :bag, :amount 2, :unit-price 80}, :shirt {:id :shirt, :amount 3, :unit-price 40}, :shoes {:id :shoes, :amount 1}}}], :total-orders 2, :total-price 0})
+nil
+clj꞉store.class4꞉> 
+#'store.class4/total-of-orders
+clj꞉store.class4꞉> 
+#'store.class4/item-total
+clj꞉store.class4꞉> 
+({:user-id [{:user 1, :items {:bag {:id :bag, :amount 2, :unit-price 80}, :shirt {:id :shirt, :amount 3, :unit-price 40}, :shoes {:id :shoes, :amount 1}}}], :total-orders 1, :total-price 0} {:user-id [{:user 12, :items {:bag {:id :bag, :amount 2, :unit-price 80}, :shirt {:id :shirt, :amount 3, :unit-price 40}, :shoes {:id :shoes, :amount 1}}} {:user 12, :items {:bag {:id :bag, :amount 2, :unit-price 80}, :shirt {:id :shirt, :amount 3, :unit-price 40}, :shoes {:id :shoes, :amount 1}}}], :total-orders 2, :total-price 0})
+nil
+clj꞉store.class4꞉> 
+#'store.class4/quantia-de-pedidos-e-gasto-total-por-usuario
+clj꞉store.class4꞉> 
+({:usuario-id 1, :total-de-pedidos 1, :preco-total 0} {:usuario-id 12, :total-de-pedidos 2, :preco-total 0})
+nil
+clj꞉store.class4꞉> 
+#'store.class4/quantia-de-pedidos-e-gasto-total-por-usuario
+clj꞉store.class4꞉> 
+({:usuario-id 1, :total-de-pedidos 1, :preco-total 0} {:usuario-id 12, :total-de-pedidos 2, :preco-total 0})
+nil
+clj꞉store.class4꞉> 
+#'store.class4/total-do-item
+clj꞉store.class4꞉> 
+#'store.class4/total-do-pedido
+clj꞉store.class4꞉> 
+#'store.class4/total-dos-pedidos
+clj꞉store.class4꞉> 
+#'store.class4/quantia-de-pedidos-e-gasto-total-por-usuario
+clj꞉store.class4꞉> 
+({:user-id [{:user 1, :items {:bag {:id :bag, :amount 2, :unit-price 80}, :shirt {:id :shirt, :amount 3, :unit-price 40}, :shoes {:id :shoes, :amount 1}}}], :total-orders 1, :total-price 0} {:user-id [{:user 12, :items {:bag {:id :bag, :amount 2, :unit-price 80}, :shirt {:id :shirt, :amount 3, :unit-price 40}, :shoes {:id :shoes, :amount 1}}} {:user 12, :items {:bag {:id :bag, :amount 2, :unit-price 80}, :shirt {:id :shirt, :amount 3, :unit-price 40}, :shoes {:id :shoes, :amount 1}}}], :total-orders 2, :total-price 0})
+nil
+clj꞉store.class4꞉> 
+#'store.class4/total-do-item
+clj꞉store.class4꞉> 
+#'store.class4/total-do-item
+clj꞉store.class4꞉> 
+({:user-id [{:user 1, :items {:bag {:id :bag, :amount 2, :unit-price 80}, :shirt {:id :shirt, :amount 3, :unit-price 40}, :shoes {:id :shoes, :amount 1}}}], :total-orders 1, :total-price 280} {:user-id [{:user 12, :items {:bag {:id :bag, :amount 2, :unit-price 80}, :shirt {:id :shirt, :amount 3, :unit-price 40}, :shoes {:id :shoes, :amount 1}}} {:user 12, :items {:bag {:id :bag, :amount 2, :unit-price 80}, :shirt {:id :shirt, :amount 3, :unit-price 40}, :shoes {:id :shoes, :amount 1}}}], :total-orders 2, :total-price 560})
+nil
+clj꞉store.class4꞉> 
+; Syntax error compiling at (/mnt/c/Users/Sergio Gomes/Dev/Clojure-Studies/logs/Projects/store/src/store/class4.clj:57:17).
+; Unable to resolve symbol: total-of-user in this context
+clj꞉store.class4꞉> 
+; Syntax error compiling at (/mnt/c/Users/Sergio Gomes/Dev/Clojure-Studies/logs/Projects/store/src/store/class4.clj:50:8).
+; Unable to resolve symbol: total-of-order in this context
+clj꞉store.class4꞉> 
+; Syntax error compiling at (/mnt/c/Users/Sergio Gomes/Dev/Clojure-Studies/logs/Projects/store/src/store/class4.clj:43:8).
+; Unable to resolve symbol: total-item in this context
+clj꞉store.class4꞉> 
+#'store.class4/total-item
+clj꞉store.class4꞉> 
+#'store.class4/total-of-order
+clj꞉store.class4꞉> 
+#'store.class4/total-of-user
+clj꞉store.class4꞉> 
+#'store.class4/quantia-de-pedidos-e-gasto-total-por-usuario
+clj꞉store.class4꞉> 
+({:user-id [{:user 1, :items {:bag {:id :bag, :amount 2, :unit-price 80}, :shirt {:id :shirt, :amount 3, :unit-price 40}, :shoes {:id :shoes, :amount 1}}}], :total-orders 1, :total-price 280} {:user-id [{:user 12, :items {:bag {:id :bag, :amount 2, :unit-price 80}, :shirt {:id :shirt, :amount 3, :unit-price 40}, :shoes {:id :shoes, :amount 1}}} {:user 12, :items {:bag {:id :bag, :amount 2, :unit-price 80}, :shirt {:id :shirt, :amount 3, :unit-price 40}, :shoes {:id :shoes, :amount 1}}}], :total-orders 2, :total-price 560})
+nil
+clj꞉store.class4꞉> 
+#'store.class4/quantity-of-orders-and-value-total-per-user
+clj꞉store.class4꞉> 
+({:user-id [{:user 1, :items {:bag {:id :bag, :amount 2, :unit-price 80}, :shirt {:id :shirt, :amount 3, :unit-price 40}, :shoes {:id :shoes, :amount 1}}}], :total-orders 1, :total-price 280} {:user-id [{:user 12, :items {:bag {:id :bag, :amount 2, :unit-price 80}, :shirt {:id :shirt, :amount 3, :unit-price 40}, :shoes {:id :shoes, :amount 1}}} {:user 12, :items {:bag {:id :bag, :amount 2, :unit-price 80}, :shirt {:id :shirt, :amount 3, :unit-price 40}, :shoes {:id :shoes, :amount 1}}}], :total-orders 2, :total-price 560})
+nil
+clj꞉store.class4꞉> 
