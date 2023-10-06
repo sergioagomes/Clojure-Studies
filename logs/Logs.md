@@ -130,3 +130,10 @@ Destructuring is often used in function parameters, where you can destructure th
 - **Today`s Progress**: Today I watched one more class on Alura about grouping maps and how to work with that, also learn how to simulate a database in memory, use required to import a class of another file and use as to abreviate,  I still had some difficultie to understand totaly this clas so I will practice more, doing more maps and groupings and watch the video again and looking for another examples to fix in my head.
 
 - **Link to Description**: [Classes](/logs/Projects/store/src/store/class4.clj)
+
+
+## Day 14: OCT 05, 2023
+
+- **Today`s Progress**: Today was a short day, just read another cap of the book progamming in Clojure and watched a video on youtube about to do a WEB API in clojure.
+
+- **Link to Description**: [Book](/logs/Docs/Programming-Clojure.md)

@@ -1,6 +1,5 @@
-# Clojure 
-
-
+# Programing in Clojure 
+ - These file has some annotations took of the book Programming in Clojure, the code are took of the book too, but I want do my version in somes cases to fix the content.
 
 ### Why Clojure
 
@@ -129,3 +128,30 @@ Clojure functions enforce their arity, that is, their expected number of argumen
 will throw an ArityException.
 
 
+### Flow Control
+
+Clojure has some flow control forms like if, do , loop/recur
+
+
+#### Branch with IF
+
+If evaluates its first argument, If the args is logically true, it returns the result of evaluating it second argument, but if we want returns when is false we pass like third argument
+```clojure
+(defn is-small? [number]
+(if (< number 100) "yes" "no"))
+```
+
+#### Side Effects with Do
+
+
+```clojure
+(defn is-small? [number]
+    (if (< number 100)
+    "yes"
+    (do
+    (println "Saw a big number" number)
+    "no"))
+```
+
+
+#### Recur with loop/recur 
