@@ -36,7 +36,6 @@
   [[_ details]]
   (* (get details :amount 0) (get details :unit-price 0)))
 
-
 (defn total-of-order
   [orders]
   (->> orders
@@ -50,7 +49,9 @@
        (map total-of-order)
        (reduce + )))
 
-(defn quantia-de-pedidos-e-gasto-total-por-usuario
+
+
+(defn quantity-of-orders-and-value-total-per-user
   [[user orders]]
   {:user-id orders
    :total-orders (count orders)
@@ -60,5 +61,5 @@
 
 (->> (s.db/all-orders)
      (group-by :user)
-     (map quantia-de-pedidos-e-gasto-total-por-usuario)
+     (map quantity-of-orders-and-value-total-per-user)
      println)

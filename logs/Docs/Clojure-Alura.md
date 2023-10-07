@@ -378,3 +378,83 @@ We'll use thread first,and if we need:
 (name-of-function <function-input> [argument])
 ```
 We'll use thread last.
+
+
+### Working with grouping and schemes
+
+working with maps and groping 
+
+**db file** - in this file I defined a map structure **order** and replied 3 times and also did a function to show all orders.
+```clojure
+(def order1 {:user 1
+             :items  {:bag {:id :bag :amount 2 :unit-price 80}
+                     :shirt {:id :shirt :amount 3 :unit-price 40}
+                     :shoes {:id :shoes :amount 1}}})
+
+;here we use the keyword to indentify in Id
+
+(def order2 {:user 12
+             :items  {:bag {:id :bag :amount 2 :unit-price 80}
+                      :shirt {:id :shirt :amount 3 :unit-price 40}
+                      :shoes {:id :shoes :amount 1}}})
+(def order3 {:user 12
+             :items  {:bag {:id :bag :amount 2 :unit-price 80}
+                      :shirt {:id :shirt :amount 3 :unit-price 40}
+                      :shoes {:id :shoes :amount 1}}})
+
+
+
+(defn all-orders []
+   [order1, order2, order3])
+``` 
+
+- **oder1 ->** Define a order that is a map structure, where I have user  and items, inside of items I have a map of items with amount and unit-price
+
+
+
+- **all-orders ->** is a function that returns all orders
+
+**main ->** in this file I will use the data that I defined on **db file**, so what I want grouping these datas on form to show quantity of orders and the value total per user.
+```clojure
+(ns store.main
+  (:require [store.db :as s.db]))
+
+(println "ORDERS")
+
+(defn total-item
+  [[_ details]]
+  (* (get details :amount 0) (get details :unit-price 0)))
+
+
+(defn total-of-order
+  [orders]
+  (->> orders
+       (map total-item)
+       (reduce +)))
+
+(defn total-of-user
+  [orders]
+  (->> orders
+       (map :items)
+       (map total-of-order)
+       (reduce + )))
+
+(defn quantity-of-orders-and-value-total-per-user
+  [[user orders]]
+  {:user-id orders
+   :total-orders (count orders)
+   :total-price (total-of-user orders)})
+
+
+
+(->> (s.db/all-orders)
+     (group-by :user)
+     (map quantity-of-orders-and-value-total-per-user)
+     println)
+```
+- **:required ->** first of all, to use the map and function I have to import in main file, to do this we use **:required [folder.file as f.file]** we can use **as** to abbreviate the name.
+
+- **total-item ->** total item is a symbol to get the total of items.
+- **total-of-order ->** get the total of orders. 
+- **total-total-of-user ->** get the total of order of user.
+- **quantity-of-orders-and-value-total-per-user ->** sum the quantity of orders and the value total per user.

@@ -144,3 +144,12 @@ Destructuring is often used in function parameters, where you can destructure th
 
 
 - **Link to Description**: [Book](/logs/Docs/Programming-Clojure.md)
+
+
+
+## Day 16: OCT 07, 2023
+
+- **Today`s Progress**: Today I still the course Clojure of Alura, learned about how order elements and use some functions to take with elements like: get, nth, reverse, take, some, also I tried to do some exercise of HeartOtber in clojure.
+
+
+- **Link to Description**: [Book](/logs/Projects/store/)

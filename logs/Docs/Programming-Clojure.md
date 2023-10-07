@@ -190,7 +190,7 @@ vars have a metadata map containing documentation, type information, and
 source information.
 
 some metadata keys:
-````
+```
 :argilist       -> Parameter info used by doc
 :doc            -> Documentation used by doc 
 :file           -> Source File  
