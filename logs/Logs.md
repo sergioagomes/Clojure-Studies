@@ -137,3 +137,10 @@ Destructuring is often used in function parameters, where you can destructure th
 - **Today`s Progress**: Today was a short day, just read another cap of the book progamming in Clojure and watched a video on youtube about to do a WEB API in clojure.
 
 - **Link to Description**: [Book](/logs/Docs/Programming-Clojure.md)
+
+## Day 15: OCT 06, 2023
+
+- **Today`s Progress**: Today was a short day, just read another chapter of the book, in this chapter I learned about side effects, recursion and loops, metadata and reader metadata, as the Author said in the final of cap, now I can write some basic code and that is what I'll do.
+
+
+- **Link to Description**: [Book](/logs/Docs/Programming-Clojure.md)

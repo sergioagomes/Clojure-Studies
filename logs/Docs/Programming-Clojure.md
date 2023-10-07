@@ -143,7 +143,7 @@ If evaluates its first argument, If the args is logically true, it returns the r
 
 #### Side Effects with Do
 
-
+The If's in Clojure just allows one form to each brach, but if we want do another thing with register determined brach was  chosen we can use **do** to this like below:
 ```clojure
 (defn is-small? [number]
     (if (< number 100)
@@ -152,6 +152,51 @@ If evaluates its first argument, If the args is logically true, it returns the r
     (println "Saw a big number" number)
     "no"))
 ```
+**Do** takes any number of forms, evaluates them all, and returns the last. so in this case we use to print the big number.
 
+if we call the function:
+```clojure
+(is-small? 200)
+| Saw a big number 200
+-> "no"
+```
+This is an example of a side effect. The println doesn’t contribute to the return
+value of is-small? at all. Instead, it reaches out into the world outside the
+function and actually does something.
 
 #### Recur with loop/recur 
+
+The syntax of loop in Clojure:
+```clojure
+(loop [bindigs *] exprs *)
+``` 
+the loop os like a let, establishing bindings and then evaluating exprs.
+
+The syntax of recursion in Clojure
+```clojure
+(recur exprs *)
+```
+
+### Metadata
+
+In Clojure, "metadata" refers to information associated with a data value that provides additional information about that value without affecting its content or behavior. Metadata is stored separately from the value and can be accessed using specific functions.
+
+Metadata in Clojure is typically used to annotate or add contextual information to data values, such as maps, vectors, functions, or even numbers. This information can be useful for documentation, debugging, validation, or any other purpose where you need to associate metadata with a value without modifying the value itself.
+
+#### Reader Metadata
+
+The Clojure language itself uses metadata in several places. For example,
+vars have a metadata map containing documentation, type information, and
+source information.
+
+some metadata keys:
+````
+:argilist       -> Parameter info used by doc
+:doc            -> Documentation used by doc 
+:file           -> Source File  
+:line           -> Source line numnber
+:macro          -> True For Macros
+:name           -> Local Name 
+:ns             -> Namespace
+:tag            -> Expected argurment or return type
+```
