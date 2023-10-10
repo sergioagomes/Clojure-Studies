@@ -153,3 +153,11 @@ Destructuring is often used in function parameters, where you can destructure th
 
 
 - **Link to Description**: [Book](/logs/Projects/store/)
+
+
+## Day 17: OCT 08, 2023
+
+- **Today`s Progress**: Today I just read how to configure a clojure project in leinigen, to put dependencies, the start point and other things...
+
+
+- **References**:[github]()
