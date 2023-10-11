@@ -458,3 +458,42 @@ working with maps and groping
 - **total-of-order ->** get the total of orders. 
 - **total-total-of-user ->** get the total of order of user.
 - **quantity-of-orders-and-value-total-per-user ->** sum the quantity of orders and the value total per user.
+
+
+
+### Keep
+Is a sequence function that is used to apply a function in each element of a sequence and return a new sequence contains just the not null result, is a way to filter elements of a sequence with base in the function passed.
+
+syntax
+```clojure
+(keep f seq)
+```
+- **f** is the function that will be applied in each element of sequence.
+- **seq** is the sequence in the function **f** will be apllied.
+
+
+The **keep** run the sequence **seq** and apply the function **f** in each element, if the result of function is not null then the element is include in the new sequence of output, if not is ignored. 
+```clojure
+(def numbers [1 2 3 4 5 6 7 8 9 10])
+
+(defn double-is-even [n]
+  (if (even? n)
+    (* 2 n)
+    nil))
+
+(def double-numbers (keep double-is-even numbers))
+```
+
+Keep is a good toy to filter and transform the sequences keeping just elements that meets specific criteria.
+
+##  Lazy and Eager
+
+### Eager Evaluation:
+
+In eager evaluation, the elements of a sequence or collection are calculated and stored immediately when the sequence is created. This means that all elements of the sequence are calculated and stored in memory right away. The advantage is that subsequent access to the sequence's elements is fast since the elements are already available. The disadvantage is that it can be inefficient when dealing with large sequences or costly operations because all elements are calculated in advance, even if not all of them are used.
+
+### Lazy Evaluation:
+
+In lazy evaluation, the elements of a sequence or collection are not calculated until they are actually needed. This means that elements are calculated only as they are accessed. The advantage is resource efficiency because only the necessary elements are actually calculated and stored in memory. This is particularly efficient when working with potentially infinite sequences or performing filtering, mapping, or transformation operations on large sequences. 
+
+In Clojure, many sequence functions like map, filter, take, drop, and others return lazy sequences by default. This allows you to work with large sequences and perform transformations on them without the need to calculate all elements at once.

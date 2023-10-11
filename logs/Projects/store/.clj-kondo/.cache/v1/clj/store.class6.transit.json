@@ -1,0 +1,1 @@
+["^ ","~$spend-a-lot?",["^ ","~:row",9,"~:col",1,"~:fixed-arities",["~#set",[1]],"~:name","^0","~:ns","~$store.class6","~:top-ns","^7","~:arities",["^ ","~i1",["^ ","~:ret","~:boolean","~:arglist-str","[user-info]"]],"~:type","~:fn"],"~:filename","/home/sergio/Dev/Clojure-Studies/logs/Projects/store/src/store/class6.clj"]

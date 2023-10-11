@@ -41,7 +41,8 @@
   (loop [total-ate-agora 0 
          rest-of-elements elements]
     (if (seq rest-of-elements)
-      (recur (omc total-ate-agora) (next rest-of-elements))
+      (recur #_{:clj-kondo/ignore [:unresolved-symbol]}
+             (omc total-ate-agora) (next rest-of-elements))
       total-ate-agora)))
 
-(println (count  ["sergio" "Felipe" "Joel" "Helder"])
+(println (count  ["sergio" "Felipe" "Joel" "Helder"]))
