@@ -162,9 +162,14 @@ Destructuring is often used in function parameters, where you can destructure th
 
 - **References**:[github]()
 
-
 ## Day 18: OCT 10, 2023
 
 - **Today`s Progress**: Today I finish the second course of formation Clojure on Alura, I learned about keep function, what it's the purpose and how this function is look a map/reduce functions, also learn about Lazy and Eaeger in Clojure and how can I use each one.
 
 - **Link to Description**: [Clojure-Alura](/logs/Docs/Clojure-Alura.md)
+
+## Day 19: OCT 11, 2023
+
+- **Today`s Progress**: Today I started a new cap in the book programming Clojure, learned more about data structures and as in Clojure we can see the most data structures as 
+sequences, also read more about lazy/eager and saw some examples to get the idea.
+
