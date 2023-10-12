@@ -170,6 +170,10 @@ Destructuring is often used in function parameters, where you can destructure th
 
 ## Day 19: OCT 11, 2023
 
-- **Today`s Progress**: Today I started a new cap in the book programming Clojure, learned more about data structures and as in Clojure we can see the most data structures as 
-sequences, also read more about lazy/eager and saw some examples to get the idea.
+- **Today`s Progress**: Today I started a new cap in the book programming Clojure, learned more about data structures and as in Clojure we can see the most data structures as sequences, also read more about lazy/eager and saw some examples to get the idea.
+
+
+## Day 20: OCT 12, 2023
+
+- **Today`s Progress**: Today I watched the video **Build a real world Clojure application**, because I want do some application with Clojure, so I started a todo-list project to practice and also will start a project real-word to do with the videos.
 
