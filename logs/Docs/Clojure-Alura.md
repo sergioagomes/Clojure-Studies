@@ -497,3 +497,20 @@ In eager evaluation, the elements of a sequence or collection are calculated and
 In lazy evaluation, the elements of a sequence or collection are not calculated until they are actually needed. This means that elements are calculated only as they are accessed. The advantage is resource efficiency because only the necessary elements are actually calculated and stored in memory. This is particularly efficient when working with potentially infinite sequences or performing filtering, mapping, or transformation operations on large sequences. 
 
 In Clojure, many sequence functions like map, filter, take, drop, and others return lazy sequences by default. This allows you to work with large sequences and perform transformations on them without the need to calculate all elements at once.
+
+
+# Clojure: Mutability with atoms and refs
+
+### Queue
+In Clojure **queue** is a data structure that implements queues, we can create a queue using:
+```clojure
+(clojure.lang.PersistentQueue/EMPTY)
+```
+so we can do like this:
+```clojure
+(defn my-queue []
+    (let [elmts(conj clojure.lang.PersistentQueue/Empty "1" "2")]
+      (println "queue")
+      (pprint elmts)))
+```
+So here I create an empty queue and using conj add two elements,and then print them afterwards.

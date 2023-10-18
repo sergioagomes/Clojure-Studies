@@ -177,3 +177,11 @@ Destructuring is often used in function parameters, where you can destructure th
 
 - **Today`s Progress**: Today I watched the video **Build a real world Clojure application**, because I want do some application with Clojure, so I started a todo-list project to practice and also will start a project real-word to do with the videos.
 
+
+## Day 21: OCT 17, 2023
+
+- **Today`s Progress**: Today I started the project real-world-app, where I'll try making my app on clojure with base in the videos... I also started the third course of the Clojure Formation of Alura, in the first class I saw about vectors|lists|sets and learned about Queues and how to declare one.
+
+- **Link to Description**: [Clojure-Alura](/logs/Docs/Clojure-Alura.md)
+- **Link to Alura-Project**: [Hospital]()
+- **Link to Project**: [Real-World-App]()
