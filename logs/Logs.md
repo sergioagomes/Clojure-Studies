@@ -185,3 +185,11 @@ Destructuring is often used in function parameters, where you can destructure th
 - **Link to Description**: [Clojure-Alura](/logs/Docs/Clojure-Alura.md)
 - **Link to Alura-Project**: [Hospital]()
 - **Link to Project**: [Real-World-App]()
+
+
+## Day 22: OCT 18, 2023
+
+- **Today`s Progress**: Today I kept the Alura course, did implementations about queue with base in class, but I tooks some time did alone to made equal the professor did, also read more of programming clojure
+
+- **Link to Description**: [Clojure-Alura](/logs/Docs/Clojure-Alura.md)
+- **Link to Alura-Project**: [Hospital]()

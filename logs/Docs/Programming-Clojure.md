@@ -200,3 +200,24 @@ some metadata keys:
 :ns             -> Namespace
 :tag            -> Expected argurment or return type
 ```
+## Unifying Data with Sequences
+
+Data Structures on Clojure can be acessed with **seq**, it's a logical list, 'cause in Clojure does not tie sequences to implementation details of a list, so the seq is an abstraction  that can be used everywhere
+
+Collection in Clojure can be viewed as seqs are called **seq-able**,and we can manipulate these collections using that incluedes some function to work with collections.
+
+### Everything is a Sequence
+Every aggregate data structure in Clojure can be viewed as a sequence. A
+sequence has three core capabilities:
+ - We can get the first item of a sequence:
+```clojure
+(first aseq)
+```
+ - We can get everything after the first item, in other words, the rest of a sequence.
+```clojure
+(rest aseq)
+```
+ - We can construct a new sequence by adding an item to front of an existing sequence. This is called cosing:
+```clojure
+(cons elem aseq)
+```

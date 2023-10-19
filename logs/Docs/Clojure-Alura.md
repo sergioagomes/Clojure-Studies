@@ -513,4 +513,4 @@ so we can do like this:
       (println "queue")
       (pprint elmts)))
 ```
-So here I create an empty queue and using conj add two elements,and then print them afterwards.
+So here I create an empty queue and using conj add two elements,and then print them afterwards, and we can use some operations like: conj, peek, pop...
