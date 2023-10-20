@@ -22,6 +22,3 @@
 (simula-um-dia)
 
 
-(defn atende
-  [hospital departamento]
-  (update hospital departamento pop))
