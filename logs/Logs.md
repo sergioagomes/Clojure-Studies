@@ -202,3 +202,11 @@ Destructuring is often used in function parameters, where you can destructure th
 - **Link to Description**: [Clojure-Alura](/logs/Docs/Clojure-Alura.md)
 - **Link to Alura-Project**: [Hospital]()
 - **Link to Project**: [Real-World-App]()
+
+
+## Day 24: OCT 20, 2023
+
+- **Today`s Progress**: Today I kept the real-world-app did the start server configs to run a http server, also read more of  Programming Clojure book.
+
+
+- **Link to Project**: [Real-World-App]()
