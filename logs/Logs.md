@@ -210,3 +210,10 @@ Destructuring is often used in function parameters, where you can destructure th
 
 
 - **Link to Project**: [Real-World-App]()
+
+
+## Day 24: OCT 20, 2023
+
+- **Today`s Progress**: Today I read more of Programming in Clojure, also kept doing the project real-world-app, but I get some problems to run the server.
+
+- **Link to Project**: [Real-World-App]()
