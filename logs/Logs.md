@@ -212,8 +212,17 @@ Destructuring is often used in function parameters, where you can destructure th
 - **Link to Project**: [Real-World-App]()
 
 
-## Day 24: OCT 20, 2023
+## Day 25: OCT 21, 2023
 
 - **Today`s Progress**: Today I read more of Programming in Clojure, also kept doing the project real-world-app, but I get some problems to run the server.
 
+- **Link to Project**: [Real-World-App]()
+
+
+## Day 26: OCT 23, 2023
+
+- **Today`s Progress**: Today I kept do the real world app, learned about how to configure a pedestal and component librarie, but still also read more about these libraries to understand 100%, and I watched more classes about Clojure formation in Alura, saw about threads and their problems and how bad is use global sysmbols.
+
+
+- **Link to Alura-Project**: [Hospital]()
 - **Link to Project**: [Real-World-App]()
