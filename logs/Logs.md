@@ -232,3 +232,7 @@ Destructuring is often used in function parameters, where you can destructure th
 - **Today`s Progress**: Today I did more of project, learned about reloading, and did some studies about pedestal, component libraries of Clojure.
 
 - **Link to Project**: [Real-World-App]()
+
+## Day 28: OCT 25, 2023
+
+- **Today`s Progress**: Today I read more of the book programing in clojure and studie about pedestal librarie
