@@ -236,3 +236,8 @@ Destructuring is often used in function parameters, where you can destructure th
 ## Day 28: OCT 25, 2023
 
 - **Today`s Progress**: Today I read more of the book programing in clojure and studie about pedestal librarie
+
+
+## Day 29: OCT 26, 2023
+
+- **Today`s Progress**: Just more reading of programin in Clojure.
