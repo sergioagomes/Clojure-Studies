@@ -240,4 +240,10 @@ Destructuring is often used in function parameters, where you can destructure th
 
 ## Day 29: OCT 26, 2023
 
-- **Today`s Progress**: Just more reading of programin in Clojure.
+- **Today`s Progress**: Just more reading of programing in Clojure.
+
+## Day 30: OCT 31, 2023
+
+- **Today`s Progress**: Today I back to watch build a real-world-app in clojure, also trying code after saw the video but some parts to configure still weird to me, need studie more about that, also kept my read about programing Clojure.
+
+- **Link to Project**: [Real-World-App]()
