@@ -514,3 +514,9 @@ so we can do like this:
       (pprint elmts)))
 ```
 So here I create an empty queue and using conj add two elements,and then print them afterwards, and we can use some operations like: conj, peek, pop...
+
+
+### Atoms
+
+Atoms provide a way to manage shared, synchronous, independent state. They are a reference type like refs and vars. You create an atom with atom, and can access its state with deref/@. Like refs and agents, atoms support validators. To change the value of an atom, you can use swap!. A lower-level compare-and-set! is also provided. Changes to atoms are always free of race condition.     ([clojure-docs](https://clojure.org/reference/atoms))
+

@@ -247,3 +247,9 @@ Destructuring is often used in function parameters, where you can destructure th
 - **Today`s Progress**: Today I back to watch build a real-world-app in clojure, also trying code after saw the video but some parts to configure still weird to me, need studie more about that, also kept my read about programing Clojure.
 
 - **Link to Project**: [Real-World-App]()
+
+## Day 31: NOV 22, 2023
+
+- **Today`s Progress**: Today I back to Alura curse, so a learned about **atoms** that is a way on clojure to manage shared state, is good when we want lead with stateless.
+
+- **Link to Description**: [Clojure-Alura](/logs/Docs/Clojure-Alura.md)
