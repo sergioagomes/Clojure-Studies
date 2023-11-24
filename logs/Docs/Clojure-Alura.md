@@ -520,3 +520,14 @@ So here I create an empty queue and using conj add two elements,and then print t
 
 Atoms provide a way to manage shared, synchronous, independent state. They are a reference type like refs and vars. You create an atom with atom, and can access its state with deref/@. Like refs and agents, atoms support validators. To change the value of an atom, you can use swap!. A lower-level compare-and-set! is also provided. Changes to atoms are always free of race condition.     ([clojure-docs](https://clojure.org/reference/atoms))
 
+example:
+```clojure
+(def my-atom (atom 0))
+```
+
+- **Swap:**The swap function! in Clojure it is used to modify the value stored in an atom in a safe way in a concurrent environment. It allows you to update the value of an atom based on a function and ensures that this update is done atomicly, that is, without interference from other threads.
+
+example:
+```clojure
+(swap! my-atom inc)
+```

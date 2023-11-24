@@ -240,16 +240,23 @@ Destructuring is often used in function parameters, where you can destructure th
 
 ## Day 29: OCT 26, 2023
 
-- **Today`s Progress**: Just more reading of programing in Clojure.
+- **Today`s Progress**: Just more reading of programming in Clojure.
 
 ## Day 30: OCT 31, 2023
 
-- **Today`s Progress**: Today I back to watch build a real-world-app in clojure, also trying code after saw the video but some parts to configure still weird to me, need studie more about that, also kept my read about programing Clojure.
+- **Today`s Progress**: Today I back to watch build a real-world-app in clojure, also trying code after saw the video but some parts to configure still weird to me, need studie more about that, also kept my read about programming Clojure.
 
 - **Link to Project**: [Real-World-App]()
 
 ## Day 31: NOV 22, 2023
 
 - **Today`s Progress**: Today I back to Alura curse, so a learned about **atoms** that is a way on clojure to manage shared state, is good when we want lead with stateless.
+
+- **Link to Description**: [Clojure-Alura](/logs/Docs/Clojure-Alura.md)
+
+
+## Day 32: NOV 23, 2023
+
+- **Today`s Progress**: Today I learned more about atoms, did some practice about atoms and how to use swap to update the value of atom, also I back to read programming in Clojure.
 
 - **Link to Description**: [Clojure-Alura](/logs/Docs/Clojure-Alura.md)
