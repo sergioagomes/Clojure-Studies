@@ -1,10 +1,7 @@
-# Others 
-
-## Aero
-
-## Pedestal
-
-## Componets
+# How to build a WebAPi in Clojure
 
 
-### Reloading
+## Libraries 
+
+- Pedestal
+- Componets

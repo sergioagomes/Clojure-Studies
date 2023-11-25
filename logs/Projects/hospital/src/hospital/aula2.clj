@@ -1,22 +1,22 @@
-(ns hospital.aula3
+(ns hospital.aula2
   (:use [clojure pprint])
   (:require [hospital.logic :as h.logic]
             [hospital.model :as h.model]))
 
 ; simbolo que qq thread que acessar esse namespace vai ter acesso a ele com o valor padrao guilherme
-(def nome "guilherme")
+(def nome "sergio")
 
 ; redefinir o simbolo (refiz o binding)
 (def nome 32567)
 
-(let [nome "guilherme"]
+(let [nome "sergio"]
   ; coisa 1
   ; coisa 2
   (println nome)
   ; nao estou refazendo o binding do simbolo local
   ; criando um novo simbolo local a este bloco e ESCONDENDO o anterior
   ; SHADOWING
-  (let [nome "daniela"]
+  (let [nome "Felipe"]
     ;coisa 3
     ;coisa 4
     (println nome))
@@ -49,7 +49,6 @@
 
 ;(testa-atomao)
 
-
 (defn chega-em-malvado! [hospital pessoa]
   (swap! hospital h.logic/chega-em-pausado-logando :espera pessoa)
   (println "apos inserir" pessoa))
@@ -68,8 +67,6 @@
 
 ; forçando situações de retry
 ;(simula-um-dia-em-paralelo)
-
-
 
 (defn chega-sem-malvado! [hospital pessoa]
   (swap! hospital h.logic/chega-em :espera pessoa)

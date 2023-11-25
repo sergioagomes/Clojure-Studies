@@ -260,3 +260,17 @@ Destructuring is often used in function parameters, where you can destructure th
 - **Today`s Progress**: Today I learned more about atoms, did some practice about atoms and how to use swap to update the value of atom, also I back to read programming in Clojure.
 
 - **Link to Description**: [Clojure-Alura](/logs/Docs/Clojure-Alura.md)
+
+## Day 33: NOV 24, 2023
+
+- **Today`s Progress**: Today I did a review about what I learned from beginning, since define symbols and functions.
+
+- **Link to Description**: [Clojure-Alura](/logs/Docs/Clojure-Alura.md)
+
+
+## Day 34: NOV 25, 2023
+
+- **Today`s Progress**: Today I spent the day to organize my routine of studies and adjust some files in this repository, also saw about concurrence in clojure.
+
+- **Link to Description**: [Clojure-Alura](/logs/Docs/Clojure-Alura.md)
+

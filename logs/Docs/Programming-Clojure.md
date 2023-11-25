@@ -1,12 +1,12 @@
-# Programing in Clojure 
- - These file has some annotations took of the book Programming in Clojure, the code are took of the book too, but I want do my version in somes cases to fix the content.
+# Programming in Clojure  
+ - These file has some annotations took of the book Programming in Clojure, the code are took of the book too, but I want do my version in some cases to fix the content.
 
 ### Why Clojure
 
 - Is a functional language, so it's simple to understand, and isolate calculation from state and identity.
 
 - Lisp is simple, it separates reading from evaluation, and
-the language is made  from a tiny number of orthogonal partsp.
+the language is made  from a tiny number of orthogonal parts.
 
 - Lisp is also powerful, providing a compiler and macro system at runtime.
 
@@ -22,9 +22,9 @@ In Clojure, the term "forms" refers to any expression or code construct that is 
 
 **Keywords:**
 
-In clojure data structure are immutable, so any Clojure data structure can be a key in a map, a very common key type is the Clojure kerword.
+In clojure data structure are immutable, so any Clojure data structure can be a key in a map, a very common key type is the Clojure keyword.
 
-Keyword is lika symbol, except that begin with a colon (:), and keywords resolve to themselves:
+Keyword is like symbol, except that begin with a colon (:), and keywords resolve to themselves:
 ```clojure
 :foo
 -> :foo
@@ -62,18 +62,18 @@ So we can instantiate the record:
 ```clojure
 (def Felipe (->Person "Felipe" 25))
 
-(:age Felipeg)
+(:age Felipe)
 -> 25
 ```
 
 
 ### Reader Macros
 
-The reader that is a part of Clojure system that transforms the code wrote on text to strucutures of data that Clojure can understand and manipulate, and reader macros has special comportments of reader add for character of macro prefix.
+The reader that is a part of Clojure system that transforms the code wrote on text to structures of data that Clojure can understand and manipulate, and reader macros has special comportment of reader add for character of macro prefix.
 
-The comment is a reader macro, this macro is **;** and the speciak reader behavior is "ignore everything else up to the end of this line."
+The comment is a reader macro, this macro is **;** and the special reader behavior is "ignore everything else up to the end of this line."
 
-For definition Reader macros are abrreviations of longer list forms and are use to reduce clutter. You have saw one, that is **'** these character prevents evaluation, for example:
+For definition Reader macros are abbreviations of longer list forms and are use to reduce clutter. You have saw one, that is **'** these character prevents evaluation, for example:
 ```clojure
 '(1 2)
 -> (1 2)
@@ -118,7 +118,7 @@ If we call
 (say-hello "Felipe")
 -> "Hello, Felipe"
 ```
-But if we try call this functin without pass an argument we'll get an erro.
+But if we try call this function without pass an argument we'll get an error.
 ```clojure
 (say-hello )
 -> rityException Wrong number of args (0) passed to: user$say-hello
@@ -194,17 +194,17 @@ some metadata keys:
 :argilist       -> Parameter info used by doc
 :doc            -> Documentation used by doc 
 :file           -> Source File  
-:line           -> Source line numnber
+:line           -> Source line number
 :macro          -> True For Macros
 :name           -> Local Name 
 :ns             -> Namespace
-:tag            -> Expected argurment or return type
+:tag            -> Expected argument or return type
 ```
 ## Unifying Data with Sequences
 
-Data Structures on Clojure can be acessed with **seq**, it's a logical list, 'cause in Clojure does not tie sequences to implementation details of a list, so the seq is an abstraction  that can be used everywhere
+Data Structures on Clojure can be accessed with **seq**, it's a logical list, 'cause in Clojure does not tie sequences to implementation details of a list, so the seq is an abstraction  that can be used everywhere
 
-Collection in Clojure can be viewed as seqs are called **seq-able**,and we can manipulate these collections using that incluedes some function to work with collections.
+Collection in Clojure can be viewed as seqs are called **seq-able**,and we can manipulate these collections using that includes some function to work with collections.
 
 ### Everything is a Sequence
 Every aggregate data structure in Clojure can be viewed as a sequence. A
