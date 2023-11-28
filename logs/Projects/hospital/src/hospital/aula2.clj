@@ -3,11 +3,12 @@
   (:require [hospital.logic :as h.logic]
             [hospital.model :as h.model]))
 
-; simbolo que qq thread que acessar esse namespace vai ter acesso a ele com o valor padrao guilherme
-(def nome "sergio")
+; simbolo que qq thread que acessar esse namespace vai ter 
+;acesso a ele com o valor padrao guilherme
+(def nome "sergio") ;sergio e um valor bindado ao nome
 
 ; redefinir o simbolo (refiz o binding)
-(def nome 32567)
+;(def nome 32567)
 
 (let [nome "sergio"]
   ; coisa 1
