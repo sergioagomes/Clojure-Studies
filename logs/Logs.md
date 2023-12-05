@@ -277,7 +277,12 @@ Destructuring is often used in function parameters, where you can destructure th
 
 ## Day 35: NOV 27, 2023
 
-- **Today`s Progress**:
+- **Today`s Progress**:  Today I spent a little time reading my annotations and  practice a bit.
 - **Link to Description**: [Clojure-Alura](/logs/Docs/Clojure-Alura.md)
 
+
+## Day 36: DEC 4, 2023
+
+- **Today`s Progress**: Today I kept my read of programming clojure, studied the base and practice a bit.
+- **Link to Description**: [Programming-Clojure](/logs/Docs/Programming-Clojure.md)
 

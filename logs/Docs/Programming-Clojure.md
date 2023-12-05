@@ -1,6 +1,9 @@
 # Programming in Clojure  
  - These file has some annotations took of the book Programming in Clojure, the code are took of the book too, but I want do my version in some cases to fix the content.
 
+
+## Chapter 1 - Getting Started
+
 ### Why Clojure
 
 - Is a functional language, so it's simple to understand, and isolate calculation from state and identity.
@@ -15,12 +18,78 @@ the language is made  from a tiny number of orthogonal parts.
 - Protocols are simple, separating polymorphism from derivation.
 
 
+## Chapter 2 - Exploring the Language
+
 ### Forms
 
 In Clojure, the term "forms" refers to any expression or code construct that is evaluated by the Clojure interpreter. Forms can be anything from function calls to literary values, arithmetic operations, and even flow control structures.
 
+**Using Numeric Types**
+Numeric literals are forms. Numbers simply evaluate to themselves. If you
+enter a number, the REPL will give it back to you
+```clojure
+50
+-> 50
+```
+Vector numbers is another kind of form. Create a vector of the numbers 6,23, 30
+```clojure
+[6, 23, 30]
+-> [6, 23, 30]
+```
 
-**Keywords:**
+A list is  also a kind of form, so a list is "data", but it's also used to call functions, for example:
+```clojure
+(+ 4 4)
+-> 8 
+```
+so what happened ? So Clojure evaluates the list as a function call, this way is called prefix notation, where the function came first of args, so Clojure treating mathematical operators like all other functions and placing them first.
+
+**Symbols**
+Forms such as +, concat, and java.lang.String are called symbols and are used to
+name things. For example, + names the function that adds things together.
+Symbols name all sorts of things in Clojure, but Symbols can't start with a number.
+
+
+**Booleans and nil**
+Rules for booleans in Clojure:
+    - true = true
+    - false = false
+    - Nil also evaluates to false when used in a boolean context.
+    - Other than false and nil, everything else evaluates to true in a boolean context.
+
+some examples:
+```clojure
+
+;The empty list in clojure is not false
+;Syntax ((if part)       (else part))
+
+(if ()"We're in Clojure" "WTF???")
+
+->"We're in Clojure"
+```
+**Maps,Keywords and Records:**
+
+Map is a collection of key/value pairs, maps have a literal form surrounded by curly braces, for example:
+```clojure
+(def franchise {"Lakers" "Lebron" "Warriors" "Curry"})
+```
+So the value **Lakers** is associated with the key **Lebron** and **Warriors** is associated with the key **Curry**
+
+So if we want, we can use commas to delimit each key/value pair, Clojure doesn't care.
+```clojure
+(def franchise {"Lakers" "Lebron", "Warriors" "Curry"})
+```
+Maps also are functions, if we pass the key to a map, it'll return that key's value or nil if the key is not found, for example:
+```clojure
+
+(franchise "Lebron")
+-> Lakers
+
+(franchise "Klay")
+-> nil
+```
+
+
 
 In clojure data structure are immutable, so any Clojure data structure can be a key in a map, a very common key type is the Clojure keyword.
 
@@ -31,9 +100,9 @@ Keyword is like symbol, except that begin with a colon (:), and keywords resolve
 ```
 Besides that we can use keywords as identifiers in our code.
 ```clojure
-(def person {:name "Felipe" :idade 25})
+(def person {:name "Felipe" :age 25})
 ```
-we also can use the keywords as keys to acess values in a map.
+we also can use the keywords as keys to access values in a map.
 ```clojure
 (println (:name person))
 ```
@@ -46,7 +115,6 @@ up in the map.
 (person :name)
 -> "Felipe"
 ```
-
 If several maps have keys in common, you can document (and enforce) this
 fact by creating a record with defrecord, so the syntax is:
 ```clojure
