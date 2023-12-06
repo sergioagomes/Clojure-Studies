@@ -88,9 +88,6 @@ Maps also are functions, if we pass the key to a map, it'll return that key's va
 (franchise "Klay")
 -> nil
 ```
-
-
-
 In clojure data structure are immutable, so any Clojure data structure can be a key in a map, a very common key type is the Clojure keyword.
 
 Keyword is like symbol, except that begin with a colon (:), and keywords resolve to themselves:
@@ -170,15 +167,16 @@ is a predicate, then by convention its name should end with a question mark, for
 (number? "S")
 -> false
 ```
-
 If we want declare our own function we can do like this:
 ```clojure
-(defn name-function [params*] body
+(efn name doc-string? attr-map? [params*] body)
 ```
 
 so let's define our function:
 ```clojure
-(defn say-hello [username]
+(defn say-hello 
+    "Returns Hello"
+    [username]
     (str "Hello, " username))
 ```
 If we call
@@ -189,11 +187,38 @@ If we call
 But if we try call this function without pass an argument we'll get an error.
 ```clojure
 (say-hello )
--> rityException Wrong number of args (0) passed to: user$say-hello
+-> ArityException Wrong number of args (0) passed to: user$say-hello
 clojure.lang.AFn.throwArity (AFn.java:437)
 ```
 Clojure functions enforce their arity, that is, their expected number of arguments. If you call a function with an incorrect number of arguments, Clojure
-will throw an ArityException.
+will throw an ArityException. to avoid this error we can make **say-hello** a issue generic , when the caller omits username, let's se an example:
+```clojure
+;Syntax
+(defn name dock-string? attr-map? ([params*] body)+)
+```
+so our say-hello function will be like these:
+```clojure
+(defn say-hello
+    "Returns Hello + username, but the default is world"
+    ([](say-hello "world"))
+    ([username] (str "Hello, " username)))
+```
+
+**Anonymous Functions**
+
+In Clojure we can create anonymous functions with **fn**, and we have three reasons to create an anonymous functions:
+- The function is so brief and self-explanatory that giving it a name makes the code harder to read, not easier.
+- The function is being used only from inside another function and needs a local name, not a top-level binding.
+- The function is created inside another function for the purpose of closing over some data.
+
+```clojure
+;Syntax
+(fn [params*] body)
+```
+let's see some examples:
+
+
+### Vars, Bindings, and Namespaces
 
 
 ### Flow Control
@@ -236,7 +261,7 @@ function and actually does something.
 
 The syntax of loop in Clojure:
 ```clojure
-(loop [bindigs *] exprs *)
+(loop [bindings *] exprs *)
 ``` 
 the loop os like a let, establishing bindings and then evaluating exprs.
 
@@ -272,7 +297,7 @@ some metadata keys:
 
 Data Structures on Clojure can be accessed with **seq**, it's a logical list, 'cause in Clojure does not tie sequences to implementation details of a list, so the seq is an abstraction  that can be used everywhere
 
-Collection in Clojure can be viewed as seqs are called **seq-able**,and we can manipulate these collections using that includes some function to work with collections.
+Collection in Clojure can be viewed as sequences are called **seq-able**,and we can manipulate these collections using that includes some function to work with collections.
 
 ### Everything is a Sequence
 Every aggregate data structure in Clojure can be viewed as a sequence. A
@@ -285,7 +310,7 @@ sequence has three core capabilities:
 ```clojure
 (rest aseq)
 ```
- - We can construct a new sequence by adding an item to front of an existing sequence. This is called cosing:
+ - We can construct a new sequence by adding an item to front of an existing sequence. This is called cosign:
 ```clojure
 (cons elem aseq)
 ```
