@@ -1,4 +1,5 @@
 (ns hospital.aula3
+  #_{:clj-kondo/ignore [:use]}
   (:use [clojure pprint])
   (:require [hospital.logic :as h.logic]
             [hospital.model :as h.model]))
