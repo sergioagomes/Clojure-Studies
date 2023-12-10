@@ -17,7 +17,56 @@
 ;   - See https://calva.io/connect-sequences/
 ; 
 ; Starting Jack-in Terminal: pushd /home/sergio/Developer/Clojure-Studies/logs/Projects/api-clojure ; lein update-in :dependencies conj '[nrepl,"1.0.0"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.28.5"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- with-profile +uberjar repl :headless ; popd
-; Using host:port 127.0.0.1:41351 ...
+; Interrupting Jack-in process.
+; Jacking in...
+; Connecting using "Leiningen" project type.
+; You can make Calva auto-select this.
+;   - See https://calva.io/connect-sequences/
+; 
+; Starting Jack-in Terminal: pushd /home/sergio/Developer/Clojure-Studies/logs/Projects/api-clojure ; lein update-in :dependencies conj '[nrepl,"1.0.0"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.28.5"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- with-profile +uberjar repl :headless ; popd
+; Interrupting Jack-in process.
+; Jacking in...
+; Connecting using "Leiningen" project type.
+; You can make Calva auto-select this.
+;   - See https://calva.io/connect-sequences/
+; 
+; Starting Jack-in Terminal: pushd /home/sergio/Developer/Clojure-Studies/logs/Projects/api-clojure ; lein update-in :dependencies conj '[nrepl,"1.0.0"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.28.5"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- with-profile +uberjar repl :headless ; popd
+; Interrupting Jack-in process.
+; Jacking in...
+; Connecting using "Leiningen" project type.
+; You can make Calva auto-select this.
+;   - See https://calva.io/connect-sequences/
+; 
+; Starting Jack-in Terminal: pushd /home/sergio/Developer/Clojure-Studies/logs/Projects/api-clojure ; lein update-in :dependencies conj '[nrepl,"1.0.0"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.28.5"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- with-profile +uberjar repl :headless ; popd
+; Interrupting Jack-in process.
+; Jacking in...
+; Connecting using "Leiningen" project type.
+; You can make Calva auto-select this.
+;   - See https://calva.io/connect-sequences/
+; 
+; Starting Jack-in Terminal: pushd /home/sergio/Developer/Clojure-Studies/logs/Projects/api-clojure ; lein update-in :dependencies conj '[nrepl,"1.0.0"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.28.5"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- with-profile +uberjar repl :headless ; popd
+; Interrupting Jack-in process.
+; Jacking in...
+; Connecting using "Leiningen" project type.
+; You can make Calva auto-select this.
+;   - See https://calva.io/connect-sequences/
+; 
+; Starting Jack-in Terminal: pushd /home/sergio/Developer/Clojure-Studies/logs/Projects/api-clojure ; lein update-in :dependencies conj '[nrepl,"1.0.0"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.28.5"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- with-profile +uberjar repl :headless ; popd
+; Interrupting Jack-in process.
+; Jacking in...
+; Connecting using "Leiningen" project type.
+; You can make Calva auto-select this.
+;   - See https://calva.io/connect-sequences/
+; 
+; Starting Jack-in Terminal: pushd /home/sergio/Developer/Clojure-Studies/logs/Projects/api-clojure ; lein update-in :dependencies conj '[nrepl,"1.0.0"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.28.5"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- with-profile +uberjar repl :headless ; popd
+(+ 1 2); Interrupting Jack-in process.
+; Jacking in...
+; Connecting using "Leiningen" project type.
+; You can make Calva auto-select this.
+;   - See https://calva.io/connect-sequences/
+; 
+; Starting Jack-in Terminal: pushd /home/sergio/Developer/Clojure-Studies/logs/Projects/api-clojure ; lein update-in :dependencies conj '[nrepl,"1.0.0"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.28.5"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- with-profile +uberjar repl :headless ; popd
+; Using host:port 127.0.0.1:34497 ...
 ; Hooking up nREPL sessions ...
 ; Connected session: clj
 ; TIPS:
@@ -33,267 +82,24 @@ clj꞉api-clojure.core꞉>  ; Use `alt+enter` to evaluate
 clj꞉api-clojure.core꞉> 
 ; Jack-in done.
 clj꞉api-clojure.core꞉> 
-nil
-clj꞉api-clojure.core꞉> 
-#'api-clojure.core/funcao-hello
-clj꞉api-clojure.core꞉> 
-#'api-clojure.core/routes
-clj꞉api-clojure.core꞉> 
-Started server http
-nil
-clj꞉api-clojure.core꞉> 
-; [nREPL-session-0d820107-6eee-4d2e-97d3-eee884c12236] INFO org.eclipse.jetty.server.Server - jetty-9.4.18.v20190429; built: 2019-04-29T20:42:08.989Z; git: e1bc35120a6617ee3df052294e433f3a25ce7097; jvm 17.0.2+8-86
-; 
-; [nREPL-session-0d820107-6eee-4d2e-97d3-eee884c12236] INFO org.eclipse.jetty.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@57068350{/,null,AVAILABLE}
-; 
-; Execution error (BindException) at sun.nio.ch.Net/bind0 (Net.java:-2).
-; Address already in use
-clj꞉api-clojure.core꞉> 
-#'api-clojure.core/service-map
-clj꞉api-clojure.core꞉> 
-; [nREPL-session-0d820107-6eee-4d2e-97d3-eee884c12236] INFO org.eclipse.jetty.server.Server - jetty-9.4.18.v20190429; built: 2019-04-29T20:42:08.989Z; git: e1bc35120a6617ee3df052294e433f3a25ce7097; jvm 17.0.2+8-86
-; 
-; [nREPL-session-0d820107-6eee-4d2e-97d3-eee884c12236] INFO org.eclipse.jetty.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@5856c6b6{/,null,AVAILABLE}
-; 
-; Execution error (BindException) at sun.nio.ch.Net/bind0 (Net.java:-2).
-; Address already in use
-clj꞉api-clojure.core꞉> 
-(http/start)
-; Execution error (ArityException) at api-clojure.core/eval8031 (form-init3554095716048577210.clj:61).
-; Wrong number of args (0) passed to: io.pedestal.http/start
-clj꞉api-clojure.core꞉> 
-#'api-clojure.core/service-map
-clj꞉api-clojure.core꞉> 
-nil
-clj꞉api-clojure.core꞉> 
-#'api-clojure.core/routes
-clj꞉api-clojure.core꞉> 
-#'api-clojure.core/funcao-hello
-clj꞉api-clojure.core꞉> 
-; [nREPL-session-0d820107-6eee-4d2e-97d3-eee884c12236] INFO org.eclipse.jetty.server.Server - jetty-9.4.18.v20190429; built: 2019-04-29T20:42:08.989Z; git: e1bc35120a6617ee3df052294e433f3a25ce7097; jvm 17.0.2+8-86
-; 
-; [nREPL-session-0d820107-6eee-4d2e-97d3-eee884c12236] INFO org.eclipse.jetty.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@43054b46{/,null,AVAILABLE}
-; 
-; Execution error (BindException) at sun.nio.ch.Net/bind0 (Net.java:-2).
-; Address already in use
-clj꞉api-clojure.core꞉> 
-#'api-clojure.core/service-map
-clj꞉api-clojure.core꞉> 
-Started server http
-nil
-clj꞉api-clojure.core꞉> 
-#'api-clojure.core/routes
-clj꞉api-clojure.core꞉> 
-#'api-clojure.core/funcao-hello
-clj꞉api-clojure.core꞉> 
-nil
-clj꞉api-clojure.core꞉> 
-#'api-clojure.core/service-map
-clj꞉api-clojure.core꞉> 
-Started server http
-nil
-clj꞉api-clojure.core꞉> 
-#'api-clojure.core/funcao-hello
-clj꞉api-clojure.core꞉> 
-nil
-clj꞉api-clojure.server꞉> 
-#'api-clojure.server/funcao-hello
-clj꞉api-clojure.server꞉> 
-; Syntax error compiling at (src/api_clojure/server.clj:11:1).
-; Unable to resolve symbol: routes in this context
-clj꞉api-clojure.server꞉> 
-; Syntax error compiling at (src/api_clojure/server.clj:11:1).
-; Unable to resolve symbol: routes in this context
-clj꞉api-clojure.server꞉> 
-#'api-clojure.server/server
-clj꞉api-clojure.server꞉> 
-; Execution error (IllegalArgumentException) at io.pedestal.http.route/fn$G (route.clj:429).
-; No implementation of method: :router-spec of protocol: #'io.pedestal.http.route/RouterSpecification found for class: nil
-clj꞉api-clojure.server꞉> 
-#'api-clojure.server/routes
-clj꞉api-clojure.server꞉> 
-#'api-clojure.server/service-map
-clj꞉api-clojure.server꞉> 
-#:io.pedestal.http{:port 8080,
-                   :service-fn #function[io.pedestal.http.impl.servlet-interceptor/interceptor-service-fn/fn--13619],
-                   :host "localhost",
-                   :type :jetty,
-                   :start-fn #function[io.pedestal.http.jetty/server/fn--13826],
-                   :interceptors
-                   [{:name :io.pedestal.http/log-request,
-                     :enter #function[io.pedestal.interceptor.helpers/on-request/fn--9494],
-                     :leave nil,
-                     :error nil}
-                    {:name :io.pedestal.http/not-found,
-                     :enter nil,
-                     :leave #function[io.pedestal.interceptor.helpers/after/fn--9466],
-                     :error nil}
-                    {:name :io.pedestal.http.ring-middlewares/content-type-interceptor,
-                     :enter nil,
-                     :leave #function[io.pedestal.interceptor.helpers/after/fn--9466],
-                     :error nil}
-                    {:name :io.pedestal.http.route/query-params,
-                     :enter #function[io.pedestal.http.route/fn--10248],
-                     :leave nil,
-                     :error nil}
-                    {:name :io.pedestal.http.route/path-params-decoder,
-                     :enter #function[io.pedestal.http.route/fn--10250],
-                     :leave nil,
-                     :error nil}
-                    {:name :io.pedestal.http.route/method-param,
-                     :enter #function[io.pedestal.http.route/method-param/fn--10253],
-                     :leave nil,
-                     :error nil}
-                    {:name :io.pedestal.http.secure-headers/secure-headers,
-                     :enter nil,
-                     :leave #function[io.pedestal.http.secure-headers/secure-headers/fn--12234],
-                     :error nil}
-                    {:name :io.pedestal.http.route/router,
-                     :enter #function[io.pedestal.http.route/fn--10238/fn--10239],
-                     :leave nil,
-                     :error nil}],
-                   :routes
-                   ({:path "/hello",
-                     :method :get,
-                     :path-re #"/\Qhello\E",
-                     :path-parts ["hello"],
-                     :interceptors
-                     [{:name nil, :enter #function[io.pedestal.interceptor/fn--256/fn--257], :leave nil, :error nil}],
-                     :route-name :hello-wolrd,
-                     :path-params []}),
-                   :servlet
-                   #object[io.pedestal.http.servlet.FnServlet 0x7fe6b458 "io.pedestal.http.servlet.FnServlet@7fe6b458"],
-                   :server
-                   #object[org.eclipse.jetty.server.Server 0x4221f731 "Server@4221f731{STARTED}[9.4.18.v20190429]"],
-                   :join? false,
-                   :stop-fn #function[io.pedestal.http.jetty/server/fn--13828]}
-; [nREPL-session-0d820107-6eee-4d2e-97d3-eee884c12236] INFO org.eclipse.jetty.server.Server - jetty-9.4.18.v20190429; built: 2019-04-29T20:42:08.989Z; git: e1bc35120a6617ee3df052294e433f3a25ce7097; jvm 17.0.2+8-86
-; 
-; [nREPL-session-0d820107-6eee-4d2e-97d3-eee884c12236] INFO org.eclipse.jetty.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@162ff724{/,null,AVAILABLE}
-; 
-; [nREPL-session-0d820107-6eee-4d2e-97d3-eee884c12236] INFO org.eclipse.jetty.server.AbstractConnector - Started ServerConnector@57fb4710{HTTP/1.1,[http/1.1, h2c]}{localhost:8080}
-; 
-; [nREPL-session-0d820107-6eee-4d2e-97d3-eee884c12236] INFO org.eclipse.jetty.server.Server - Started @1180071ms
-clj꞉api-clojure.server꞉> 
-{:status 200,
- :body "Hello World",
- :headers
- {"Strict-Transport-Security" "max-age=31536000; includeSubdomains",
-  "X-Frame-Options" "DENY",
-  "X-Content-Type-Options" "nosniff",
-  "X-XSS-Protection" "1; mode=block",
-  "X-Download-Options" "noopen",
-  "X-Permitted-Cross-Domain-Policies" "none",
-  "Content-Security-Policy"
-  "object-src 'none'; script-src 'unsafe-inline' 'unsafe-eval' 'strict-dynamic' https: http:;",
-  "Content-Type" "text/plain"}}
-; [nREPL-session-0d820107-6eee-4d2e-97d3-eee884c12236] INFO io.pedestal.http - {:msg "GET /hello", :line 80}
-clj꞉api-clojure.server꞉> 
-#'api-clojure.server/test-request
-clj꞉api-clojure.server꞉> 
-{:status 200,
- :body "Hello World",
- :headers
- {"Strict-Transport-Security" "max-age=31536000; includeSubdomains",
-  "X-Frame-Options" "DENY",
-  "X-Content-Type-Options" "nosniff",
-  "X-XSS-Protection" "1; mode=block",
-  "X-Download-Options" "noopen",
-  "X-Permitted-Cross-Domain-Policies" "none",
-  "Content-Security-Policy"
-  "object-src 'none'; script-src 'unsafe-inline' 'unsafe-eval' 'strict-dynamic' https: http:;",
-  "Content-Type" "text/plain"}}
-; [nREPL-session-0d820107-6eee-4d2e-97d3-eee884c12236] INFO io.pedestal.http - {:msg "GET /hello", :line 80}
-clj꞉api-clojure.server꞉> 
-clear
-; Syntax error compiling at (.calva/output-window/output.calva-repl:1:7937).
-; Unable to resolve symbol: clear in this context
-clj꞉api-clojure.server꞉> 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-; Jacking in...
-; Connecting using "Leiningen" project type.
-; You can make Calva auto-select this.
-;   - See https://calva.io/connect-sequences/
-; 
-; Starting Jack-in Terminal: pushd /home/sergio/Developer/Clojure-Studies/logs/Projects/api-clojure ; lein update-in :dependencies conj '[nrepl,"1.0.0"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.28.5"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- with-profile +uberjar repl :headless ; popd
-; nREPL Connection was closed
-; Jacking in...
-; Connecting using "Leiningen" project type.
-; You can make Calva auto-select this.
-;   - See https://calva.io/connect-sequences/
-; 
-; Starting Jack-in Terminal: pushd /home/sergio/Developer/Clojure-Studies/logs/Projects/api-clojure ; lein update-in :dependencies conj '[nrepl,"1.0.0"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.28.5"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- with-profile +uberjar repl :headless ; popd
-; Using host:port 127.0.0.1:39795 ...
-; Hooking up nREPL sessions ...
-; Connected session: clj
-; TIPS:
-;   - You can edit the contents here. Use it as a REPL if you like.
-;   - `alt+enter` evaluates the current top level form.
-;   - `ctrl+enter` evaluates the current form.
-;   - `alt+up` and `alt+down` traverse up and down the REPL command history
-;      when the cursor is after the last contents at the prompt
-;   - Clojure lines in stack traces are peekable and clickable.
-; Evaluating code from settings: 'calva.autoEvaluateCode.onConnect.clj'
-nil
-clj꞉api-clojure.core꞉> 
-clj꞉api-clojure.core꞉> 
-; Jack-in done.
-clj꞉api-clojure.core꞉> 
-; Syntax error compiling at (src/api_clojure/server.clj:1:7938).
-; Unable to resolve symbol: x in this context
-clj꞉api-clojure.server꞉> 
-; Syntax error compiling at (src/api_clojure/server.clj:26:1).
-; Unable to resolve symbol: start-server in this context
+; Syntax error compiling at (src/api_clojure/server.clj:50:1).
+; Unable to resolve symbol: test-request in this context
 clj꞉api-clojure.server꞉> 
 nil
 clj꞉api-clojure.server꞉> 
 #'api-clojure.server/funcao-hello
 clj꞉api-clojure.server꞉> 
-; Syntax error compiling at (src/api_clojure/server.clj:11:1).
-; Unable to resolve symbol: routes in this context
+#'api-clojure.server/create-map-task
+clj꞉api-clojure.server꞉> 
+#'api-clojure.server/store
+clj꞉api-clojure.server꞉> 
+#'api-clojure.server/create-task
+clj꞉api-clojure.server꞉> 
+#'api-clojure.server/get-tasks
 clj꞉api-clojure.server꞉> 
 #'api-clojure.server/routes
 clj꞉api-clojure.server꞉> 
 #'api-clojure.server/service-map
-clj꞉api-clojure.server꞉> 
-; Syntax error compiling at (src/api_clojure/server.clj:20:3).
-; Unable to resolve symbol: server in this context
 clj꞉api-clojure.server꞉> 
 #'api-clojure.server/server
 clj꞉api-clojure.server꞉> 
@@ -301,6 +107,9 @@ clj꞉api-clojure.server꞉> 
 clj꞉api-clojure.server꞉> 
 #'api-clojure.server/test-request
 clj꞉api-clojure.server꞉> 
+; Execution error (AssertionError) at io.pedestal.http.servlet/servlet (servlet.clj:47).
+; Assert failed: (fn? service)
+clj꞉api-clojure.server꞉> 
 #:io.pedestal.http{:port 8080,
                    :service-fn #function[io.pedestal.http.impl.servlet-interceptor/interceptor-service-fn/fn--13619],
                    :host "localhost",
@@ -340,7 +149,23 @@ clj꞉api-clojure.server꞉> 
                      :leave nil,
                      :error nil}],
                    :routes
-                   ({:path "/hello",
+                   ({:path "/tasks",
+                     :method :get,
+                     :path-re #"/\Qtasks\E",
+                     :path-parts ["tasks"],
+                     :interceptors
+                     [{:name nil, :enter #function[io.pedestal.interceptor/fn--256/fn--257], :leave nil, :error nil}],
+                     :route-name :get-tasks,
+                     :path-params []}
+                    {:path "/tasks",
+                     :method :post,
+                     :path-re #"/\Qtasks\E",
+                     :path-parts ["tasks"],
+                     :interceptors
+                     [{:name nil, :enter #function[io.pedestal.interceptor/fn--256/fn--257], :leave nil, :error nil}],
+                     :route-name :create-task,
+                     :path-params []}
+                    {:path "/hello",
                      :method :get,
                      :path-re #"/\Qhello\E",
                      :path-parts ["hello"],
@@ -349,20 +174,20 @@ clj꞉api-clojure.server꞉> 
                      :route-name :hello-wolrd,
                      :path-params []}),
                    :servlet
-                   #object[io.pedestal.http.servlet.FnServlet 0x43aa342a "io.pedestal.http.servlet.FnServlet@43aa342a"],
+                   #object[io.pedestal.http.servlet.FnServlet 0x29b991f2 "io.pedestal.http.servlet.FnServlet@29b991f2"],
                    :server
-                   #object[org.eclipse.jetty.server.Server 0x6d28c0f6 "Server@6d28c0f6{STARTED}[9.4.18.v20190429]"],
+                   #object[org.eclipse.jetty.server.Server 0x7afbd567 "Server@7afbd567{STARTED}[9.4.18.v20190429]"],
                    :join? false,
                    :stop-fn #function[io.pedestal.http.jetty/server/fn--13828]}
-; [nREPL-session-8256ba49-be97-4ffe-880f-6c73d3e5a768] INFO org.eclipse.jetty.util.log - Logging initialized @55463ms to org.eclipse.jetty.util.log.Slf4jLog
+; [nREPL-session-2abfb4d6-5f27-4210-a9cf-78ff383bb500] INFO org.eclipse.jetty.util.log - Logging initialized @32348ms to org.eclipse.jetty.util.log.Slf4jLog
 ; 
-; [nREPL-session-8256ba49-be97-4ffe-880f-6c73d3e5a768] INFO org.eclipse.jetty.server.Server - jetty-9.4.18.v20190429; built: 2019-04-29T20:42:08.989Z; git: e1bc35120a6617ee3df052294e433f3a25ce7097; jvm 17.0.2+8-86
+; [nREPL-session-2abfb4d6-5f27-4210-a9cf-78ff383bb500] INFO org.eclipse.jetty.server.Server - jetty-9.4.18.v20190429; built: 2019-04-29T20:42:08.989Z; git: e1bc35120a6617ee3df052294e433f3a25ce7097; jvm 17.0.2+8-86
 ; 
-; [nREPL-session-8256ba49-be97-4ffe-880f-6c73d3e5a768] INFO org.eclipse.jetty.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@bc3d91f{/,null,AVAILABLE}
+; [nREPL-session-2abfb4d6-5f27-4210-a9cf-78ff383bb500] INFO org.eclipse.jetty.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@73f8c26d{/,null,AVAILABLE}
 ; 
-; [nREPL-session-8256ba49-be97-4ffe-880f-6c73d3e5a768] INFO org.eclipse.jetty.server.AbstractConnector - Started ServerConnector@396d8d6a{HTTP/1.1,[http/1.1, h2c]}{localhost:8080}
+; [nREPL-session-2abfb4d6-5f27-4210-a9cf-78ff383bb500] INFO org.eclipse.jetty.server.AbstractConnector - Started ServerConnector@162b64d6{HTTP/1.1,[http/1.1, h2c]}{localhost:8080}
 ; 
-; [nREPL-session-8256ba49-be97-4ffe-880f-6c73d3e5a768] INFO org.eclipse.jetty.server.Server - Started @55537ms
+; [nREPL-session-2abfb4d6-5f27-4210-a9cf-78ff383bb500] INFO org.eclipse.jetty.server.Server - Started @32409ms
 clj꞉api-clojure.server꞉> 
 {:status 200,
  :body "Hello World",
@@ -376,5 +201,70 @@ clj꞉api-clojure.server꞉> 
   "Content-Security-Policy"
   "object-src 'none'; script-src 'unsafe-inline' 'unsafe-eval' 'strict-dynamic' https: http:;",
   "Content-Type" "text/plain"}}
-; [nREPL-session-8256ba49-be97-4ffe-880f-6c73d3e5a768] INFO io.pedestal.http - {:msg "GET /hello", :line 80}
+; [nREPL-session-2abfb4d6-5f27-4210-a9cf-78ff383bb500] INFO io.pedestal.http - {:msg "GET /hello", :line 80}
+clj꞉api-clojure.server꞉> 
+{:status 404, :body "Not Found", :headers {"Content-Type" "text/plain"}}
+; [nREPL-session-2abfb4d6-5f27-4210-a9cf-78ff383bb500] INFO io.pedestal.http - {:msg "POST /task", :line 80}
+clj꞉api-clojure.server꞉> 
+{:status 404, :body "Not Found", :headers {"Content-Type" "text/plain"}}
+; [nREPL-session-2abfb4d6-5f27-4210-a9cf-78ff383bb500] INFO io.pedestal.http - {:msg "POST /task", :line 80}
+clj꞉api-clojure.server꞉> 
+{:status 200,
+ :body "{}",
+ :headers
+ {"Strict-Transport-Security" "max-age=31536000; includeSubdomains",
+  "X-Frame-Options" "DENY",
+  "X-Content-Type-Options" "nosniff",
+  "X-XSS-Protection" "1; mode=block",
+  "X-Download-Options" "noopen",
+  "X-Permitted-Cross-Domain-Policies" "none",
+  "Content-Security-Policy"
+  "object-src 'none'; script-src 'unsafe-inline' 'unsafe-eval' 'strict-dynamic' https: http:;",
+  "Content-Type" "application/edn"}}
+; [nREPL-session-2abfb4d6-5f27-4210-a9cf-78ff383bb500] INFO io.pedestal.http - {:msg "GET /tasks", :line 80}
+clj꞉api-clojure.server꞉> 
+{:status 200,
+ :body
+ "{:message \"Task created with sucess\", :task {:uuid #uuid \"2fb35f2e-b3a9-469a-9087-8a71b39abc52\", :name \"Ler\", :status \"todo\"}}",
+ :headers
+ {"Strict-Transport-Security" "max-age=31536000; includeSubdomains",
+  "X-Frame-Options" "DENY",
+  "X-Content-Type-Options" "nosniff",
+  "X-XSS-Protection" "1; mode=block",
+  "X-Download-Options" "noopen",
+  "X-Permitted-Cross-Domain-Policies" "none",
+  "Content-Security-Policy"
+  "object-src 'none'; script-src 'unsafe-inline' 'unsafe-eval' 'strict-dynamic' https: http:;",
+  "Content-Type" "application/edn"}}
+; [nREPL-session-2abfb4d6-5f27-4210-a9cf-78ff383bb500] INFO io.pedestal.http - {:msg "POST /tasks", :line 80}
+clj꞉api-clojure.server꞉> 
+{:status 200,
+ :body
+ "{:message \"Task created with sucess\", :task {:uuid #uuid \"1bdf7b97-cef6-4ed5-af3e-13e63df9df57\", :name \"Jogar\", :status \"todo\"}}",
+ :headers
+ {"Strict-Transport-Security" "max-age=31536000; includeSubdomains",
+  "X-Frame-Options" "DENY",
+  "X-Content-Type-Options" "nosniff",
+  "X-XSS-Protection" "1; mode=block",
+  "X-Download-Options" "noopen",
+  "X-Permitted-Cross-Domain-Policies" "none",
+  "Content-Security-Policy"
+  "object-src 'none'; script-src 'unsafe-inline' 'unsafe-eval' 'strict-dynamic' https: http:;",
+  "Content-Type" "application/edn"}}
+; [nREPL-session-2abfb4d6-5f27-4210-a9cf-78ff383bb500] INFO io.pedestal.http - {:msg "POST /tasks", :line 80}
+clj꞉api-clojure.server꞉> 
+{:status 200,
+ :body
+ "{#uuid \"2fb35f2e-b3a9-469a-9087-8a71b39abc52\" {:uuid #uuid \"2fb35f2e-b3a9-469a-9087-8a71b39abc52\", :name \"Ler\", :status \"todo\"}, #uuid \"1bdf7b97-cef6-4ed5-af3e-13e63df9df57\" {:uuid #uuid \"1bdf7b97-cef6-4ed5-af3e-13e63df9df57\", :name \"Jogar\", :status \"todo\"}}",
+ :headers
+ {"Strict-Transport-Security" "max-age=31536000; includeSubdomains",
+  "X-Frame-Options" "DENY",
+  "X-Content-Type-Options" "nosniff",
+  "X-XSS-Protection" "1; mode=block",
+  "X-Download-Options" "noopen",
+  "X-Permitted-Cross-Domain-Policies" "none",
+  "Content-Security-Policy"
+  "object-src 'none'; script-src 'unsafe-inline' 'unsafe-eval' 'strict-dynamic' https: http:;",
+  "Content-Type" "application/edn"}}
+; [nREPL-session-2abfb4d6-5f27-4210-a9cf-78ff383bb500] INFO io.pedestal.http - {:msg "GET /tasks", :line 80}
 clj꞉api-clojure.server꞉> 
