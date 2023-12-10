@@ -48,8 +48,8 @@
 
 (start-server)
 (test-request :get "/hello")
-(test-request :post "/task?name=Ler&status=todo")
-(test-request :post "/task?name=Jogar&status=todo")
+(test-request :post "/tasks?name=Ler&status=todo")
+(test-request :post "/tasks?name=Jogar&status=todo")
 
 ;list all tasks
 (test-request :get "/tasks")
