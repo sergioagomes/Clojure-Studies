@@ -169,7 +169,7 @@ is a predicate, then by convention its name should end with a question mark, for
 ```
 If we want declare our own function we can do like this:
 ```clojure
-(efn name doc-string? attr-map? [params*] body)
+(defn name doc-string? attr-map? [params*] body)
 ```
 
 so let's define our function:
@@ -214,12 +214,55 @@ In Clojure we can create anonymous functions with **fn**, and we have three reas
 ```clojure
 ;Syntax
 (fn [params*] body)
-```
-let's see some examples:
 
+#(body) ;this is a anonymous function too
+```
+
+- **When to Use Anonymous Functions**
+It's recommend use anonymous function when you find that they make your code readable.
 
 ### Vars, Bindings, and Namespaces
 
+When I define a def or defn, that object is store in a Clojure var, like this:
+```clojure
+(def foo 300)
+-> #'user/foo
+```
+the symbol foo refers to a var that is a bound the the value 300, if I evaluate the symbol foo, it'll return the value of the associated var:
+```clojure
+foo
+-> 300
+``` 
+the initial value of a var is called root binding.
+
+- **Bindings**
+
+Exists other kind of bindings in clojure, for example:
+```clojure
+(defn add1 [number] (+ 1 number)
+-> #'user/add1
+
+(add1 10)
+-> 11
+```
+A function’s parameter bindings have a lexical scope: they are visible only
+inside the text of the function body. Functions are not the only way to create
+a lexical binding. The special form let does nothing other than create a set of
+lexical bindings
+```clojure
+(let [bindings*] exprs*)
+```
+So the bindings are then in effect for exprs, and the value of the let is the
+value of the last expression in exprs.
+
+- **Destructuring**
+In Clojure, destructuring is a powerful feature that allows you to bind values from data structures, such as vectors, lists, or maps, to symbols in a concise and expressive way. Destructuring is commonly used in function parameters, let bindings, and other places where you want to extract values from complex data structures.
+```clojure
+(let [{:keys [name age]} {:name "John" :age 30}]
+  (println name) ; prints "John"
+  (println age)) ; prints 30
+
+```
 
 ### Flow Control
 

@@ -304,3 +304,9 @@ Destructuring is often used in function parameters, where you can destructure th
 - **Today`s Progress**: Today I did a bit more of api, also read more of programming in clojure.
 
 - **Link to Description**: [API]()
+
+
+## Day 38: DEC 11, 2023
+
+- **Today`s Progress**: Today I read more of programming clojure, fix some concepts like destructuring, namespaces and how calling java inside clojure.
+- **Link to Description**: [Programming-Clojure](/logs/Docs/Programming-Clojure.md)
