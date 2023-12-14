@@ -400,6 +400,9 @@ How can we see recur is a powerful building block, and Clojure provides many com
 -> [5 4 3 2 1]
 ```
 
+- **Where's my for loop?**
+  So to start clojure has no for loops and no direct mutable variables. In clojure when we want do some kind of loop we use map, filter or reduce to do that.
+
 ### Metadata
 
 In Clojure, "metadata" refers to information associated with a data value that provides additional information about that value without affecting its content or behavior. Metadata is stored separately from the value and can be accessed using specific functions.
@@ -439,17 +442,50 @@ sequence has three core capabilities:
 - We can get the first item of a sequence:
 
 ```clojure
+;Syntax
 (first aseq)
+
+(first '(1 2 3 ))
+-> 1
 ```
 
 - We can get everything after the first item, in other words, the rest of a sequence.
 
 ```clojure
+;Syntax
 (rest aseq)
+
+(rest '(1 2 3))
+-> (2 3 )
 ```
 
 - We can construct a new sequence by adding an item to front of an existing sequence. This is called cosign:
 
 ```clojure
+;Syntax
 (cons elem aseq)
+
+(cons 0 '(1 2 3 4))
+-> (0 1 2 3 4)
+
+```
+
+So we also use these functions in other structures like vector, and will work as well.
+
+```clojure
+(first [1 2 3])
+-> 1
+```
+
+We also can treat maps as seqs, if you think of a key/value pair as an item in a sequences, let's see some examples:
+
+```clojure
+(first {:fname "Aaron" :lname "Bedra"})
+-> [:lname "Bedra"]
+
+(rest {:fname "Aaron" :lname "Bedra"})
+-> ([:fname "Aaron"])
+
+(cons [:mname "James"] {:fname "Aaron" :lname "Bedra"})
+-> ([:mname "James"] [:lname "Bedra"] [:fname "Aaron"])
 ```

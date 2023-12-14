@@ -255,7 +255,6 @@ Destructuring is often used in function parameters, where you can destructure th
 - **Today`s Progress**: Today I kept my read of programming clojure, and put in practice some example saw in the book.
 - **Link to Description**: [Programming-Clojure](/logs/Docs/Programming-Clojure.md)
 
-
 ## Day 38: DEC 11, 2023
 
 - **Today`s Progress**: Today I read more of programming clojure, fix some concepts like destructuring, namespaces and how calling java inside clojure.
@@ -266,3 +265,8 @@ Destructuring is often used in function parameters, where you can destructure th
 - **Today`s Progress**: Today I read more of programming clojure, but this time is read about recursion and loops also practice a bit made some examples.
 - **Link to Description**: [Programming-Clojure](/logs/Docs/Programming-Clojure.md)
 
+## Day 40: DEC 13, 2023
+
+-- **Today`s Progress**: Today I read more of programming clojure, remember concepts of unify data with sequences.
+
+- **Link to Description**: [Programming-Clojure](/logs/Docs/Programming-Clojure.md)
