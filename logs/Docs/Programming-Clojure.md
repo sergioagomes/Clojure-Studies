@@ -489,3 +489,62 @@ We also can treat maps as seqs, if you think of a key/value pair as an item in a
 (cons [:mname "James"] {:fname "Aaron" :lname "Bedra"})
 -> ([:mname "James"] [:lname "Bedra"] [:fname "Aaron"])
 ```
+
+## Using the Sequence Library
+
+CLojure provides a lib of sequence it has a rich set of functionality that can work with any sequence. The functions provide a rich backbone of functionality that can take advantage of any data structure that obeys the basic first/rest/cons contract.
+
+These functions are grouped into four broad categories:
+
+- Functions that create sequences.
+- Functions that filter sequences.
+- Sequences predicates.
+- Functions that transforms em sequences.
+
+These divisions are somewhat arbitrary. Since sequences are immutable, most
+of the sequence functions create new sequences. Some of the sequence
+functions both filter and transform.
+
+- **Creating Sequences**
+
+Clojure provides some functions that create sequences like range, repeat, iterate, let's do some examples:
+
+Range:
+
+```clojure
+;syntax - Range produces a sequence from a start to an end, incrementing by a step each time.
+(range start? end step?)
+
+(range 10)
+- (0 1 2 3 4 5 6 7 8 9)
+; Range includes their start but not their end, if I do not specify then, so start
+; defaults to zero, and steps defaults to 1.
+
+```
+
+Repeat:
+
+```clojure
+;syntax - Repeats an element x n times
+(repeat n x)
+
+
+(repeat 6 2)
+-> (2 2 2 2 2 2)
+
+```
+
+- **Filter Sequences**
+
+Clojure also provides functions that filer sequences, returning a subsequence of the original sequence, like filter, take-while, drop-while, let's do some examples:
+
+Filter:
+
+```clojure
+;Syntax
+(filter pred coll)
+
+(filter even? list-of-numbers)
+-> (2 4 6 8 10)
+
+```

@@ -270,3 +270,10 @@ Destructuring is often used in function parameters, where you can destructure th
 -- **Today`s Progress**: Today I read more of programming clojure, remember concepts of unify data with sequences.
 
 - **Link to Description**: [Programming-Clojure](/logs/Docs/Programming-Clojure.md)
+
+## Day 41: DEC 14, 2023
+
+-- **Today`s Progress**: Today I read more of programming clojure, also finally understood more about how
+works sequences in clojure.
+
+- **Link to Description**: [Programming-Clojure](/logs/Docs/Programming-Clojure.md)
