@@ -1,12 +1,11 @@
 (ns api-clojure.server (:require [io.pedestal.http :as http]
                                  [io.pedestal.http.route :as route]
-                                 [io.pedestal.test :as test]))
+                                 [io.pedestal.test :as test]
+                                 [api-clojure.database :as database]))
                                 
 
 (defn funcao-hello [request]
   {:status 200 :body  (str "Hello World" (get-in request [:query-params :name]))})
-
-(def store (atom {}))
 
 (defn create-map-task [uuid name status]
   {:uuid uuid :name name :status status})
@@ -16,18 +15,18 @@
         name (get-in request [:query-params :name])
         status (get-in request [:query-params :status])
         task (create-map-task uuid name status)]
-    (swap! store assoc uuid task)
+    (swap! database/store assoc uuid task)
     {:status 200 :body {:message "Task created with sucess"
                         :task task}}))
 
 (defn get-tasks [request]
-  {:status 200 :body @store})
+  {:status 200 :body database/store})
 
 
 
 (def routes (route/expand-routes
              #{["/hello" :get funcao-hello :route-name :hello-wolrd]
-               ["/tasks" :post create-task  :route-name :create-task]
+               ["/tasks" :post [db-interceptor create-task]  :route-name :create-task]
                ["/tasks"  :get  get-tasks  :route-name :get-tasks]}))
 
 
@@ -45,8 +44,16 @@
 (defn test-request [verb url]
   (test/response-for (::http/service-fn @server) verb url))
 
+(defn stop []
+  (http/stop @server))
+
+(defn restart []
+  (stop)
+  (start-server))
+
 
 (start-server)
+(restart)
 (test-request :get "/hello")
 (test-request :post "/tasks?name=Ler&status=todo")
 (test-request :post "/tasks?name=Jogar&status=todo")

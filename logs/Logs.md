@@ -277,3 +277,9 @@ Destructuring is often used in function parameters, where you can destructure th
 works sequences in clojure.
 
 - **Link to Description**: [Programming-Clojure](/logs/Docs/Programming-Clojure.md)
+
+## Day 42: DEC 19, 2023
+
+-- **Today`s Progress**: Today I kept some progress on Alura, learned more about sequences.
+
+- **Link to Description**: [Programming-Clojure](/logs/Docs/Programming-Clojure.md)
