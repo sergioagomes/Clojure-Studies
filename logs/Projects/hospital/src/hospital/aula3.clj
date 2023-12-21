@@ -13,7 +13,6 @@
   (let [hospital (atom (h.model/novo-hospital))
         pessoas ["111","222","333","444","555","666"]]
 
-
     (mapv #(.start (Thread. (fn [] (chega-sem-malvado! hospital %)))) pessoas)
 
     (.start (Thread. (fn [] (Thread/sleep 8000)
@@ -25,18 +24,14 @@
         pessoas ["111","222","333","444","555","666"]
         starta-thread-de-chegada #(.start (Thread. (fn [] (chega-sem-malvado! hospital %))))]
 
-
     (mapv  starta-thread-de-chegada pessoas)
 
     (.start (Thread. (fn [] (Thread/sleep 8000)
                        (pprint hospital))))))
 
-
-
-(defn starta-thread-de-chegada 
+(defn starta-thread-de-chegada
   [hospital pessoa]
   #(.start (Thread. (fn [] (chega-sem-malvado! hospital pessoa)))))
-
 
 ;doseq e dotimes
 (defn simula-um-dia-em-paralelo-com-doseq
@@ -46,7 +41,6 @@
 
     (doseq [pessoa pessoas]
       (starta-thread-de-chegada hospital pessoa))
-
 
     (.start (Thread. (fn [] (Thread/sleep 8000)
                        (pprint hospital))))))
@@ -58,11 +52,8 @@
     (doseq [pessoa 6]
       (starta-thread-de-chegada hospital pessoa))
 
-
     (.start (Thread. (fn [] (Thread/sleep 8000)
                        (pprint hospital))))))
-
-
 
 ; sem forçar situação de retry (busy retry), pode acontecer, mas pode não acontecer
 (simula-um-dia-em-paralelo-com-dotimes)

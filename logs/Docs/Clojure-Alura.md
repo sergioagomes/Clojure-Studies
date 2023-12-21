@@ -531,3 +531,29 @@ example:
 ```clojure
 (swap! my-atom inc)
 ```
+
+
+### Refs 
+
+A Ref is a transactional reference that represents a variable whose value can be changed within a transaction. The transaction itself is a block of code that is executed atomically, that is, as a single indivisible unit. This means that if multiple transactions are happening simultaneously, they do not interfere with each other.
+
+By using Refs, you can coordinate updates to multiple Refs within a transaction, ensuring that operations are atomic and consistent, even in a concurrent environment. This helps avoid issues like race conditions and ensure that your code maintains data integrity.
+
+So, in summary, in Clojure, a Ref is a reference to a value that can be updated within transactions, providing a safe and effective approach to dealing with concurrency in software.
+
+And you want use ref when you want work with two or more mutable values, 'cause refs facilitate coordination of both.
+
+```clojure
+;EXAMPLE OF DOC
+; create(ref)
+(def a (ref '(1 2 3)))
+
+; read(deref)
+(deref a) ; -> (1 2 3)
+
+; rewrite(ref-set)
+; (ref-set a '(3 2 1)) err!
+(dosync (ref-set a '(3 2 1)))
+
+(deref a) ; -> (3 2 1
+```

@@ -283,3 +283,9 @@ works sequences in clojure.
 -- **Today`s Progress**: Today I kept some progress on Alura, learned more about sequences.
 
 - **Link to Description**: [Programming-Clojure](/logs/Docs/Programming-Clojure.md)
+
+## Day 43: DEC 20, 2023
+
+-- **Today`s Progress**: Today I kept some progress on Alura, learned more about refs, alter, and how can I use to work with then.
+
+- **Link to Description**: [Clojure-Alura](/logs/Docs/Clojure-Alura.md)
