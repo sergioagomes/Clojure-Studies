@@ -548,3 +548,51 @@ Filter:
 -> (2 4 6 8 10)
 
 ```
+
+- **Sequence Predicates**
+
+A sequence predicate asks how some other predicate applies to every item in a sequence, for example,
+the every? predicate asks whether some other predicate is true for every element of a sequence.
+(words of book)
+
+```clojure
+(every? pred coll)
+
+(every? odd? [1 3 5])
+-> true
+
+(every odd? [1 3 5 8])
+-> false 
+```
+
+also we have some, that returns the first nonfalse value for it's predicate or returns nil if
+no element matched:
+```clojure
+(some even? [1 2 3])
+-> true
+
+(some eve? [1 3 5])
+-> false
+```
+It's important say that some is not a predicate, but it's often used like one, some returns 
+the actual value of the first match instead of true.
+
+
+- **Transforming Sequences**
+Transformation functions transform the values in the sequence, for example:
+```clojure
+(map f coll)
+```
+Map takes a source collection coll and a function f, and it returns a new
+sequence by invoking f on each element in the coll.
+
+Reduce is another transformation:
+```clojure
+(reduce f coll)
+```
+F is a function of two arguments, reduce applies f on the first two elements in coll and then applies
+f to the result and the third element, and so on. So reduce is useful for functions that "total up" a sequence in some way. let's see examples:
+```clojure
+(reduce + (range 1 11))
+-> 55
+```

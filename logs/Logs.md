@@ -191,7 +191,7 @@ Destructuring is often used in function parameters, where you can destructure th
 
 ## Day 26: OCT 23, 2023
 
-- **Today`s Progress**: Today I kept do the real world app, learned about how to configure a pedestal and component librarie, but still also read more about these libraries to understand 100%, and I watched more classes about Clojure formation in Alura, saw about threads and their problems and how bad is use global sysmbols.
+- **Today`s Progress**: Today I kept do the real world app, learned about how to configure a pedestal and component libraries, but still also read more about these libraries to understand 100%, and I watched more classes about Clojure formation in Alura, saw about threads and their problems and how bad is use global symbols.
 
 - **Link to Alura-Project**: [Hospital]()
 - **Link to Project**: [Real-World-App]()
@@ -204,7 +204,7 @@ Destructuring is often used in function parameters, where you can destructure th
 
 ## Day 28: OCT 25, 2023
 
-- **Today`s Progress**: Today I read more of the book programing in clojure and studie about pedestal librarie
+- **Today`s Progress**: Today I read more of the book programming in clojure and study about pedestal libraries
 
 ## Day 29: OCT 26, 2023
 
@@ -289,3 +289,9 @@ works sequences in clojure.
 -- **Today`s Progress**: Today I kept some progress on Alura, learned more about refs, alter, and how can I use to work with then.
 
 - **Link to Description**: [Clojure-Alura](/logs/Docs/Clojure-Alura.md)
+
+## Day 44: DEC 21, 2023
+
+-- **Today`s Progress**: Today I kept some progress on Alura, learned about defrecords that's a way to work with OO in clojure, also read more of book Programming Clojure.
+
+- **Link to Description**: [Programming-Clojure](/logs/Docs/Programming-Clojure.md)
