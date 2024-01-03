@@ -295,3 +295,9 @@ works sequences in clojure.
 -- **Today`s Progress**: Today I kept some progress on Alura, learned about defrecords that's a way to work with OO in clojure, also read more of book Programming Clojure.
 
 - **Link to Description**: [Programming-Clojure](/logs/Docs/Programming-Clojure.md)
+
+
+## Day 45: JAN 01, 2024
+
+-- **Today`s Progress**: Today I organized my study routine and recapped my notes.
+- **Link to Description**: 
