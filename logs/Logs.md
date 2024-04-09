@@ -300,11 +300,15 @@ works sequences in clojure.
 ## Day 45: JAN 02, 2024
 
 -- **Today`s Progress**: Today I organized my study routine and recapped my notes.
-- **Link to Description**: 
-
 
 ## Day 46: JAN 03, 2024
 
 -- **Today`s Progress**: Today I read more of programming clojure, also practice a little doing some exercises 
+
+- **Link to Description**: [Programming-Clojure](/logs/Docs/Programming-Clojure.md)
+
+## Day 47:  APR 08, 2024
+
+-- **Today`s Progress**: Back to studies in clojure.
 
 - **Link to Description**: [Programming-Clojure](/logs/Docs/Programming-Clojure.md)

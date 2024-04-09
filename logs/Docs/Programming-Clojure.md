@@ -596,3 +596,23 @@ f to the result and the third element, and so on. So reduce is useful for functi
 (reduce + (range 1 11))
 -> 55
 ```
+
+We can sort a collection with sort or sort-by:
+```clojure
+(sort comp? coll)
+(sort-by a-fn comp? coll)
+```
+sort sorts a collection by the natural order of it's elements, where sort-by sort a sequence by the result of calling a-fn on each element:
+```clojure
+(sort [42 1 7 11])
+-> (1 7 11 42)
+``` 
+
+- **Lazy and Infinite Sequences**
+
+Most Clojure sequences are lazy, that means  elementes are not calculated until they are neeeded. Using lazy sequences has many benefits:
+ - You can postpone expensive computations that may not in fact be needed.
+ - You can work with huge data sets that do not fit into memory.
+ - You can delay I/O until it is absolutely needed.
+
+When should you prefer lazy sequences? Most of the time. Most sequence functions return lazy sequences, so you pay only for what you use. More important, lazy sequences do not require any special effort on your part.
