@@ -428,7 +428,7 @@ some metadata keys:
 :tag            -> Expected argument or return type
 ```
 
-## Unifying Data with Sequences
+## Chapter 3 - Unifying Data with Sequences
 
 Data Structures on Clojure can be accessed with **seq**, it's a logical list, 'cause in Clojure does not tie sequences to implementation details of a list, so the seq is an abstraction that can be used everywhere
 
@@ -490,7 +490,7 @@ We also can treat maps as seqs, if you think of a key/value pair as an item in a
 -> ([:mname "James"] [:lname "Bedra"] [:fname "Aaron"])
 ```
 
-## Using the Sequence Library
+### Using the Sequence Library
 
 CLojure provides a lib of sequence it has a rich set of functionality that can work with any sequence. The functions provide a rich backbone of functionality that can take advantage of any data structure that obeys the basic first/rest/cons contract.
 
@@ -616,3 +616,44 @@ Most Clojure sequences are lazy, that means  elementes are not calculated until 
  - You can delay I/O until it is absolutely needed.
 
 When should you prefer lazy sequences? Most of the time. Most sequence functions return lazy sequences, so you pay only for what you use. More important, lazy sequences do not require any special effort on your part.
+
+
+- **Forcing Sequences**
+
+You have created a lazy sequence, and you want to force the sequence to evaluate fully. The problem usually arises when the code generating the sequence has side effects. Consider the following sequence, which embeds side effects via println:
+```clojure
+(def x (for [i (range 1 3)] (do (println i)i)))
+```
+
+So the previous code prints nothing. Since the definition of x does not actually use the elements, Clojure does not evaluate the compehension to get them. You can force evaluation with **doall**:
+```clojure
+(doall coll)
+```
+The **doall** forces Clojure to walk the elements of a sequence and returns the elements as a result:
+```clojure
+(doall x)
+|1
+|2
+-> (1 2)
+```
+We can also use **dorun**:
+```clojure
+(dorun coll)
+```
+**dorun** wals the elments of a sequence without keeping past elements in a memory. As a result, dorun can walk collection to large to fit in memory.
+```clojure
+(def x (for [i (range 1 3)(do (println i))]))
+
+(dorun x)
+|1
+|2
+->nil
+```
+The nil return value is a telltale reminder that dorun does not hold a reference
+to the entire sequence. The dorun and doall functions help you deal with side
+effects, while most of the rest of Clojure discourages side effects. You should
+use these functions rarely.
+
+### Clojure Makes Java Seq-able
+
+abstraction of first/res applies to anything that there can be more than one of, in the Java world, that includes the following:

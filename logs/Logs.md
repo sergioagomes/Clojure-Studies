@@ -312,3 +312,9 @@ works sequences in clojure.
 -- **Today`s Progress**: Back to studies in clojure.
 
 - **Link to Description**: [Programming-Clojure](/logs/Docs/Programming-Clojure.md)
+
+## Day 48:  APR 10, 2024
+
+-- **Today`s Progress**: Back to read, the chapter of today was about forcing sequences in clojure and how  it works.
+
+- **Link to Description**: [Programming-Clojure](/logs/Docs/Programming-Clojure.md)
