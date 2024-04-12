@@ -256,8 +256,6 @@ Let's describe this:
 - src: That's where our code will really be.
 - test: That's where the tests will be placed.
 
-
-
 ### Predicate
 
 A predicate is a function that returns a boolean value(true or false) with a

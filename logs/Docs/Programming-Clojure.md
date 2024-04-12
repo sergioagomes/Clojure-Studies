@@ -657,3 +657,112 @@ use these functions rarely.
 ### Clojure Makes Java Seq-able
 
 abstraction of first/res applies to anything that there can be more than one of, in the Java world, that includes the following:
+- Regular Expressions
+- File system traversal
+- XML processing
+- Relational database results
+- The collectionsl API 
+
+So Clojure wraps these Java API's, making the sequence library available for almost everything we do.
+
+- **Seq-ing Java Collection**
+
+If we try to apply the sequence functions to Java collections, you will find that they behave as sequences. Collection that can act as sequences are called seq-able. For example, arrays are seq-able:
+```clojure
+(first (.getBytes "hello")) ;String.getBytes returns a byte array
+-> 104
+
+(rest (.getBytes "hello"))
+-> (101 108 108 111)
+
+(cons (int \h) (.getBytes "ello"))
+-> (104 101 108 108 111)
+```
+Maps and HashTables are also seq-able:
+```clojure
+ ;System.getProperties returns a Hashtable
+(first (System/getProperties))
+-> #<Entry java.runtime.name=Java(TM) SE Runtime Environment>
+
+(rest (System/getProperties))
+-> #<Entry sun.boot.library.path=/System/Library/... etc. ...
+```
+
+
+- **Seq-ing Regular Expressions**
+Clojure's regular expressions use the java.util.regex library unde the hood. At the lowest level, this exposes the mutable nature of Java's Matcher, so we can use **re-matcher** to create a Matcher for a regular expression and a string and then a loop on re-find to iterate over the matches.
+```clojure
+(re-matcher regexp string)
+```
+we also can use a better regex:
+```clojure
+(re-seq regexp string)
+```
+re-seq exposes an immutable seq over the matchers. This gives you the power of all of CLojure's sequence functions.
+
+re-seq is a great example of how good abstractions reduce code bloat. Regular
+expression matches are not a special kind of thing, requiring special methods
+to deal with them. They are sequences, just like everything else.
+
+- **Seq-ing the File System**
+
+We can seq over  the file system. For the starters, you can call java.io.file directyl:
+```clojure
+(import '(java.io File))
+(.listFiles (File. "."))
+-> [Ljava.io.File;@lf70f15e
+```
+java.io.File is a Java's toString() representation for an array of Files. Sequence
+functions would call seq o this automattically, but the REPL doesn't.
+
+## Calling Structure-Specific Functions 
+
+Clojure's sequence functions allow  you to write very general code. Sometiimes
+you will want to be more specific and take advantage of the characteristics of 
+a specific data structure, clojure includes functions that specifically target 
+list, vectors, maps, structs, and sets.
+
+- **Functions on List**
+```clojure
+(peek coll); take first element of list
+
+(pop coll); take rest elements of list
+
+
+
+(peek '(1 2 3))
+-> 1
+
+(pop '(1 2 3))
+-> 2
+```
+
+- **Functions on Vectors**
+```clojure
+(peek '(1 2 3))
+-> 1
+
+(pop '(1 2 3))
+-> 2
+
+;we can use GET, get returns the value at an index or returns nil if the index
+;is outside the vector
+(get [:a :b :c] 1)
+-> :b
+
+(get [:a :b :c] 8)
+-> nil
+
+;Vectors are themselver functions
+([:a :b :c] 2)
+-> :c
+
+([:a :b :c] 5)
+-> Java.lang.ArrayIndexOutOfBoundsException: 5
+
+
+;we can use assoc to assocate a new value with a particular index
+(assoc [0 1 2 3 4 5] 1 :one)
+-> [0 :one 2 3 4 5]
+
+```
