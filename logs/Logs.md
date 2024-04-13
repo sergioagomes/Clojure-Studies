@@ -195,13 +195,7 @@ Destructuring is often used in function parameters, where you can destructure th
 
 - **Link to Alura-Project**: [Hospital]()
 - **Link to Project**: [Real-World-App]()
-
-## Day 27: OCT 24, 2023
-
-- **Today`s Progress**: Today I did more of project, learned about reloading, and did some studies about pedestal, component libraries of Clojure.
-
-- **Link to Project**: [Real-World-App]()
-
+Calling Structure-Specific Functions
 ## Day 28: OCT 25, 2023
 
 - **Today`s Progress**: Today I read more of the book programming in clojure and study about pedestal libraries
@@ -226,15 +220,7 @@ Destructuring is often used in function parameters, where you can destructure th
 
 - **Today`s Progress**: Today I learned more about atoms, did some practice about atoms and how to use swap to update the value of atom, also I back to read programming in Clojure.
 
-- **Link to Description**: [Clojure-Alura](/logs/Docs/Clojure-Alura.md)
-
-## Day 33: NOV 24, 2023
-
-- **Today`s Progress**: Today I did a review about what I learned from beginning, since define symbols and functions.
-
-- **Link to Description**: [Clojure-Alura](/logs/Docs/Clojure-Alura.md)
-
-## Day 34: NOV 25, 2023
+- **Link to Description**: [Clojure-AlCalling Structure-Specific Functions
 
 - **Today`s Progress**: Today I spent the day to organize my routine of studies and adjust some files in this repository, also saw about concurrence in clojure.
 
@@ -273,37 +259,31 @@ Destructuring is often used in function parameters, where you can destructure th
 
 ## Day 41: DEC 14, 2023
 
--- **Today`s Progress**: Today I read more of programming clojure, also finally understood more about how
+- **Today`s Progress**: Today I read more of programming clojure, also finally understood more about how
 works sequences in clojure.
 
 - **Link to Description**: [Programming-Clojure](/logs/Docs/Programming-Clojure.md)
 
 ## Day 42: DEC 19, 2023
 
--- **Today`s Progress**: Today I kept some progress on Alura, learned more about sequences.
+- **Today`s Progress**: Today I kept some progress on Alura, learned more about sequences.
 
 - **Link to Description**: [Programming-Clojure](/logs/Docs/Programming-Clojure.md)
 
 ## Day 43: DEC 20, 2023
 
--- **Today`s Progress**: Today I kept some progress on Alura, learned more about refs, alter, and how can I use to work with then.
+- **Today`s Progress**: Today I kept some progress on Alura, learned more about refs, alter, and how can I use to work with then.
 
 - **Link to Description**: [Clojure-Alura](/logs/Docs/Clojure-Alura.md)
 
 ## Day 44: DEC 21, 2023
 
--- **Today`s Progress**: Today I kept some progress on Alura, learned about defrecords that's a way to work with OO in clojure, also read more of book Programming Clojure.
+- **Today`s Progress**: Today I kept some progress on Alura, learned about defrecords that's a way to work with OO in clojure, also read more of book Programming Clojure.
 
 - **Link to Description**: [Programming-Clojure](/logs/Docs/Programming-Clojure.md)
 
 
-## Day 45: JAN 02, 2024
-
--- **Today`s Progress**: Today I organized my study routine and recapped my notes.
-
-## Day 46: JAN 03, 2024
-
--- **Today`s Progress**: Today I read more of programming clojure, also practice a little doing some exercises 
+## Day 45: JAN 02, 2024Calling Structure-Specific Functions
 
 - **Link to Description**: [Programming-Clojure](/logs/Docs/Programming-Clojure.md)
 
@@ -315,6 +295,20 @@ works sequences in clojure.
 
 ## Day 48:  APR 10, 2024
 
--- **Today`s Progress**: Back to read, the chapter of today was about forcing sequences in clojure and how  it works.
+- **Today`s Progress**: Back to read, the chapter of today was about forcing sequences in clojure and how  it works.
 
 - **Link to Description**: [Programming-Clojure](/logs/Docs/Programming-Clojure.md)
+
+
+## Day 49:  APR 11, 2024
+
+- **Today`s Progress**: Read more about how sequences works in clojure and also started a new chapter of book - calling structure-specific functions.
+
+- **Link to Description**: [Programming-Clojure](/logs/Docs/Programming-Clojure.md)
+
+
+## Day 50:  APR 12, 2024
+
+- **Today`s Progress**: today I practice a bit doing some quest on exercism.
+
+- **Link to Description**: [Exercism]()

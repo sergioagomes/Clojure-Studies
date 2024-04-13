@@ -24,7 +24,8 @@
 
 
 
-(def routes (route/expand-routes
+(def routes #_{:clj-kondo/ignore [:unresolved-symbol]}
+            (route/expand-routes
              #{["/hello" :get funcao-hello :route-name :hello-wolrd]
                ["/tasks" :post [db-interceptor create-task]  :route-name :create-task]
                ["/tasks"  :get  get-tasks  :route-name :get-tasks]}))
