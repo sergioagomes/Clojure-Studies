@@ -312,3 +312,10 @@ works sequences in clojure.
 - **Today`s Progress**: today I practice a bit doing some quest on exercism.
 
 - **Link to Description**: [Exercism]()
+
+
+## Day 51:  APR 12, 2024
+
+- **Today`s Progress**: today I practice a bit doing some quest on exercism.
+
+- **Link to Description**: [Exercism]()
